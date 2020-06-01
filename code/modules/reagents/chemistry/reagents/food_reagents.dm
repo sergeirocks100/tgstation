@@ -894,3 +894,10 @@
 	description = "A very milky batter. 5 units of this on the griddle makes a mean pancake."
 	taste_description = "milky batter"
 	color = "#fccc98"
+
+/datum/reagent/consumable/mustard
+	name = "Mustard"
+	description = "It may be yellow, but it's certainly not mellow."
+	nutriment_factor = 5 * REAGENTS_METABOLISM
+	color = "#FFDB58" // rgb: 255, 219, 88
+	taste_description = "mustard"
