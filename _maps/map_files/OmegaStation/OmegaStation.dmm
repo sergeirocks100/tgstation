@@ -29732,11 +29732,12 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+/obj/structure/cable,
 /obj/machinery/power/apc{
 	areastring = "/area/hydroponics";
-	dir = 4;
+	dir = 8;
 	name = "Hydroponics APC";
-	pixel_x = -26
+	pixel_x = -25
 	},
 /turf/open/floor/plasteel/dark,
 /area/hydroponics)
@@ -40084,7 +40085,7 @@
 /turf/open/floor/plating,
 /area/chapel/main)
 "vBU" = (
-/obj/machinery/telecomms/message_server,
+/obj/machinery/telecomms/message_server/preset,
 /turf/open/floor/circuit/green/telecomms,
 /area/tcommsat/server)
 "vCj" = (
@@ -41597,13 +41598,13 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 1
 	},
+/obj/structure/cable,
 /obj/machinery/power/apc{
 	areastring = "/area/medical/medbay";
-	dir = 4;
+	dir = 8;
 	name = "Medbay APC";
-	pixel_x = -26
+	pixel_x = -25
 	},
-/obj/structure/cable,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay)
 "xLI" = (
