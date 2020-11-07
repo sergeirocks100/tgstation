@@ -5087,6 +5087,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "alD" = (
@@ -13961,6 +13962,12 @@
 	pixel_y = 26
 	},
 /obj/structure/cable,
+/obj/machinery/power/apc{
+	areastring = "/area/maintenance/starboard";
+	dir = 1;
+	name = "Starboard Maintenance APC";
+	pixel_y = 26
+	},
 /turf/open/floor/plasteel,
 /area/maintenance/starboard)
 "aLe" = (
@@ -14891,6 +14898,7 @@
 /area/crew_quarters/bar/atrium)
 "aNx" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "aNA" = (
@@ -16662,6 +16670,12 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/machinery/power/apc{
+	areastring = "/area/maintenance/starboard";
+	dir = 1;
+	name = "Starboard Maintenance APC";
+	pixel_y = 26
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit)
 "aSx" = (
@@ -17121,6 +17135,7 @@
 	id_tag = "commissarydoor";
 	name = "Commissary"
 	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "aTy" = (
@@ -25344,6 +25359,11 @@
 	},
 /turf/open/floor/circuit/green,
 /area/ai_monitored/nuke_storage)
+"cnG" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/maintenance/starboard)
 "cnU" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -25616,6 +25636,9 @@
 /obj/effect/turf_decal/trimline/brown/filled/warning{
 	dir = 9
 	},
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/vacant_room/commissary)
 "cFK" = (
@@ -25720,6 +25743,13 @@
 /obj/effect/turf_decal/trimline/brown/filled/warning{
 	dir = 1
 	},
+/obj/machinery/power/apc{
+	areastring = "area/vacant_room/commissary";
+	dir = 1;
+	name = "Vacant Commissary APC";
+	pixel_y = 26
+	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/vacant_room/commissary)
 "cPq" = (
@@ -28272,9 +28302,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
+/turf/open/floor/plasteel,
 /area/vacant_room/commissary)
 "hfp" = (
 /obj/machinery/mass_driver{
@@ -28643,6 +28671,13 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/science/research)
+"hNN" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/maintenance/starboard)
 "hOc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -31620,6 +31655,13 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/plasteel/grimy,
 /area/medical/psychology)
+"mAJ" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/maintenance/starboard)
 "mAL" = (
 /obj/structure/bodycontainer/morgue,
 /obj/machinery/power/apc{
@@ -34802,6 +34844,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "rlt" = (
@@ -39957,6 +40000,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/vacant_room/commissary)
 "vrQ" = (
@@ -40191,7 +40235,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/open/floor/plating,
+/turf/open/floor/plasteel,
 /area/vacant_room/commissary)
 "vLk" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -40619,6 +40663,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/chapel/main)
+"wqf" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/maintenance/starboard)
 "wqy" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -82713,11 +82764,11 @@ uuU
 aLe
 alC
 aNx
-aWj
+mAJ
 aNx
-aVn
-aUw
-eUz
+hNN
+wqf
+cnG
 qva
 cEz
 gDe
