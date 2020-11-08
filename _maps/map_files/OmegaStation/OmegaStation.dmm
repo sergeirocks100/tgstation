@@ -13882,7 +13882,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/machinery/computer/arcade{
+/obj/effect/spawner/randomarcade{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -25359,11 +25359,6 @@
 	},
 /turf/open/floor/circuit/green,
 /area/ai_monitored/nuke_storage)
-"cnG" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/maintenance/starboard)
 "cnU" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -28671,13 +28666,6 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/science/research)
-"hNN" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/cable,
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
-/area/maintenance/starboard)
 "hOc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -30067,6 +30055,13 @@
 	heat_capacity = 1e+006
 	},
 /area/hallway/primary/fore)
+"kcc" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/maintenance/starboard)
 "khm" = (
 /obj/structure/chair/comfy/black,
 /turf/open/floor/wood,
@@ -31655,13 +31650,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/plasteel/grimy,
 /area/medical/psychology)
-"mAJ" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/cable,
-/turf/open/floor/plating{
-	icon_state = "platingdmg2"
-	},
-/area/maintenance/starboard)
 "mAL" = (
 /obj/structure/bodycontainer/morgue,
 /obj/machinery/power/apc{
@@ -33782,6 +33770,13 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel/dark,
 /area/library)
+"pJm" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/maintenance/starboard)
 "pKa" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/cable,
@@ -38406,6 +38401,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/chemistry)
+"sSS" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/maintenance/starboard)
 "sUe" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
@@ -40663,13 +40663,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/chapel/main)
-"wqf" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/cable,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/maintenance/starboard)
 "wqy" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -41076,6 +41069,13 @@
 "wWz" = (
 /turf/closed/wall/r_wall,
 /area/security/detectives_office)
+"wZi" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/maintenance/starboard)
 "xam" = (
 /obj/machinery/door/window{
 	dir = 8;
@@ -82764,11 +82764,11 @@ uuU
 aLe
 alC
 aNx
-mAJ
+kcc
 aNx
-hNN
-wqf
-cnG
+pJm
+wZi
+sSS
 qva
 cEz
 gDe
