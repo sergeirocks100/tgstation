@@ -25600,7 +25600,14 @@
 /turf/closed/wall,
 /area/crew_quarters/lounge)
 "cCA" = (
-/turf/open/floor/circuit,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/machinery/mechpad,
+/turf/open/floor/plasteel/dark,
 /area/science/robotics/mechbay)
 "cDF" = (
 /obj/machinery/door/firedoor,
@@ -31761,7 +31768,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/open/floor/circuit/green,
+/turf/open/floor/circuit,
 /area/science/robotics/mechbay)
 "mKR" = (
 /obj/structure/table/wood,
@@ -34941,7 +34948,16 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/circuit/green,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/machinery/computer/mechpad{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
 /area/science/robotics/mechbay)
 "rve" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -40838,7 +40854,7 @@
 /obj/machinery/status_display/ai{
 	pixel_y = -32
 	},
-/turf/open/floor/circuit/green,
+/turf/open/floor/circuit,
 /area/science/robotics/mechbay)
 "wKl" = (
 /obj/item/scalpel,
@@ -41302,7 +41318,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
 	},
-/turf/open/floor/circuit/green,
+/turf/open/floor/circuit,
 /area/science/robotics/mechbay)
 "xot" = (
 /obj/structure/sign/warning/nosmoking/circle,
