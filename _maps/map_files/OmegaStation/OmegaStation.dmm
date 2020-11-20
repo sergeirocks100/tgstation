@@ -33397,9 +33397,9 @@
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "pgw" = (
-/obj/structure/table/wood/fancy,
 /obj/item/storage/book/bible,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/altar_of_gods,
 /turf/open/floor/plasteel/grimy,
 /area/chapel/main)
 "pgN" = (
