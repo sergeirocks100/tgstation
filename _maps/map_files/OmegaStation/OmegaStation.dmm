@@ -15649,7 +15649,7 @@
 /area/crew_quarters/kitchen)
 "aPo" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/snacks/mint,
+/obj/item/food/mint,
 /obj/item/reagent_containers/food/condiment/enzyme{
 	pixel_y = 5
 	},
@@ -22528,9 +22528,9 @@
 	id = "hydrodesk";
 	name = "Hydroponics Counter Shutters"
 	},
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/pumpkin,
-/obj/item/reagent_containers/food/snacks/grown/grapes,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/pumpkin,
+/obj/item/food/grown/grapes,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/hydroponics)
@@ -24948,6 +24948,16 @@
 /obj/structure/bed,
 /obj/item/bedsheet,
 /obj/structure/cable,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/prison/safe)
 "bHv" = (
@@ -25051,6 +25061,7 @@
 	pixel_y = 23
 	},
 /obj/structure/cable,
+/obj/structure/rack,
 /turf/open/floor/plasteel/dark,
 /area/security/execution/education)
 "bQa" = (
@@ -25168,6 +25179,16 @@
 /area/science/xenobiology)
 "ccf" = (
 /obj/structure/cable,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/prison/safe)
 "ccy" = (
@@ -25419,10 +25440,10 @@
 /obj/item/food/breadslice/plain,
 /obj/item/food/breadslice/plain,
 /obj/item/food/breadslice/plain,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/onion,
-/obj/item/reagent_containers/food/snacks/grown/onion,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/onion,
+/obj/item/food/grown/onion,
 /obj/item/food/meat/rawcutlet/plain,
 /obj/item/food/meat/rawcutlet/plain,
 /obj/item/food/meat/rawcutlet/plain,
@@ -27169,6 +27190,16 @@
 	dir = 8
 	},
 /obj/machinery/light/small,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/prison/safe)
 "faZ" = (
@@ -29614,6 +29645,16 @@
 	dir = 8
 	},
 /obj/structure/cable,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/prison/safe)
 "jgd" = (
@@ -30116,15 +30157,15 @@
 /area/science/research)
 "kkJ" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/grown/poppy{
+/obj/item/food/grown/poppy{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/food/snacks/grown/poppy{
+/obj/item/food/grown/poppy{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/food/snacks/grown/poppy,
+/obj/item/food/grown/poppy,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
 	},
@@ -37114,10 +37155,10 @@
 	pixel_x = 16;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/food/snacks/grown/watermelon,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/food/grown/watermelon,
+/obj/item/food/grown/wheat,
 /obj/item/seeds/wheat,
-/obj/item/reagent_containers/food/snacks/grown/tomato,
+/obj/item/food/grown/tomato,
 /obj/effect/turf_decal/bot,
 /obj/item/paper/guides/jobs/hydroponics,
 /obj/effect/turf_decal/tile/blue,
@@ -37373,6 +37414,16 @@
 /area/hallway/primary/central)
 "sLU" = (
 /obj/effect/landmark/start/prisoner,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/prison/safe)
 "sLV" = (
@@ -39219,6 +39270,16 @@
 /obj/structure/bed,
 /obj/item/bedsheet,
 /obj/effect/spawner/lootdrop/prison_contraband,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/prison/safe)
 "uga" = (
@@ -40085,6 +40146,16 @@
 "vuW" = (
 /obj/structure/cable,
 /obj/machinery/light/small,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/prison/safe)
 "vwN" = (
@@ -41961,6 +42032,16 @@
 "ycy" = (
 /obj/structure/cable,
 /obj/effect/landmark/start/prisoner,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/prison/safe)
 "ycN" = (
