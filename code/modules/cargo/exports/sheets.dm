@@ -16,7 +16,6 @@
 
 /datum/export/stack/skin/human
 	cost = CARGO_CRATE_VALUE * 0.5
-	export_category = EXPORT_CONTRABAND
 	unit_name = "piece"
 	message = "of human skin"
 	export_types = list(/obj/item/stack/sheet/animalhide/human)
@@ -28,13 +27,11 @@
 
 /datum/export/stack/skin/cat
 	cost = CARGO_CRATE_VALUE * 0.75
-	export_category = EXPORT_CONTRABAND
 	unit_name = "cat hide"
 	export_types = list(/obj/item/stack/sheet/animalhide/cat)
 
 /datum/export/stack/skin/corgi
 	cost = CARGO_CRATE_VALUE
-	export_category = EXPORT_CONTRABAND
 	unit_name = "corgi hide"
 	export_types = list(/obj/item/stack/sheet/animalhide/corgi)
 
@@ -63,11 +60,11 @@
 // For base materials, see materials.dm
 
 /datum/export/stack/plasteel
-	cost = CARGO_CRATE_VALUE * 0.41 // 2000u of plasma + 2000u of metal.
+	cost = CARGO_CRATE_VALUE * 0.41 // 2000u of plasma + 2000u of iron.
 	message = "of plasteel"
 	export_types = list(/obj/item/stack/sheet/plasteel)
 
-// 1 glass + 0.5 metal, cost is rounded up.
+// 1 glass + 0.5 iron, cost is rounded up.
 /datum/export/stack/rglass
 	cost = CARGO_CRATE_VALUE * 0.02
 	message = "of reinforced glass"

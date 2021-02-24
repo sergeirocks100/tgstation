@@ -1,9 +1,9 @@
-#define CAN_DEFAULT_RELEASE_PRESSURE 	(ONE_ATMOSPHERE)
+#define CAN_DEFAULT_RELEASE_PRESSURE (ONE_ATMOSPHERE)
 ///Used when setting the mode of the canisters, enabling us to switch the overlays
 //These are used as icon states later down the line for tier overlays
-#define CANISTER_TIER_1					"tier 1"
-#define CANISTER_TIER_2					"tier 2"
-#define CANISTER_TIER_3					"tier 3"
+#define CANISTER_TIER_1 1
+#define CANISTER_TIER_2 2
+#define CANISTER_TIER_3 3
 
 /obj/machinery/portable_atmospherics/canister
 	name = "canister"
@@ -73,6 +73,10 @@
 		"halon" = /obj/machinery/portable_atmospherics/canister/halon
 	)
 
+/obj/machinery/portable_atmospherics/canister/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/atmos_sensitive)
+
 /obj/machinery/portable_atmospherics/canister/interact(mob/user)
 	if(!allowed(user))
 		to_chat(user, "<span class='alert'>Error - Unauthorized User.</span>")
@@ -83,7 +87,7 @@
 /obj/machinery/portable_atmospherics/canister/examine(user)
 	. = ..()
 	if(mode)
-		. += "<span class='notice'>This canister is [mode]. A sticker on its side says <b>MAX PRESSURE: [siunit_pressure(pressure_limit, 0)]</b>.</span>"
+		. += "<span class='notice'>This canister is Tier [mode]. A sticker on its side says <b>MAX PRESSURE: [siunit_pressure(pressure_limit, 0)]</b>.</span>"
 
 /obj/machinery/portable_atmospherics/canister/nitrogen
 	name = "Nitrogen canister"
@@ -271,7 +275,7 @@
 	timing = !timing
 	if(timing)
 		valve_timer = world.time + (timer_set * 10)
-	update_icon()
+	update_appearance()
 
 /obj/machinery/portable_atmospherics/canister/proto
 	name = "prototype canister"
@@ -326,7 +330,7 @@
 		air_contents.copy_from(existing_mixture)
 	else
 		create_gas()
-	update_icon()
+	update_appearance()
 
 
 /obj/machinery/portable_atmospherics/canister/proc/create_gas()
@@ -346,32 +350,36 @@
 /obj/machinery/portable_atmospherics/canister/update_icon_state()
 	if(machine_stat & BROKEN)
 		icon_state = "[base_icon_state]-1"
+	return ..()
 
 /obj/machinery/portable_atmospherics/canister/update_overlays()
 	. = ..()
 	var/isBroken = machine_stat & BROKEN
 	///Function is used to actually set the overlays
-	. += "[mode]-[isBroken]"
+	. += "tier [mode]-[isBroken]"
 	if(isBroken)
 		return
 	if(holding)
 		. += "can-open"
 	if(connected_port)
 		. += "can-connector"
-	var/pressure = air_contents.return_pressure()
-	if(pressure >= 40 * ONE_ATMOSPHERE)
-		. += "can-3"
-	else if(pressure >= 10 * ONE_ATMOSPHERE)
-		. += "can-2"
-	else if(pressure >= 5 * ONE_ATMOSPHERE)
-		. += "can-1"
-	else if(pressure >= 10)
-		. += "can-0"
 
-/obj/machinery/portable_atmospherics/canister/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
-	if(exposed_temperature > (temperature_resistance * mode))
-		take_damage(5, BURN, 0)
+	switch(air_contents.return_pressure())
+		if((40 * ONE_ATMOSPHERE) to INFINITY)
+			. += "can-3"
+		if((10 * ONE_ATMOSPHERE) to (40 * ONE_ATMOSPHERE))
+			. += "can-2"
+		if((5 * ONE_ATMOSPHERE) to (10 * ONE_ATMOSPHERE))
+			. += "can-1"
+		if((10) to (5 * ONE_ATMOSPHERE))
+			. += "can-0"
 
+
+/obj/machinery/portable_atmospherics/canister/should_atmos_process(datum/gas_mixture/air, exposed_temperature)
+	return exposed_temperature > temperature_resistance * mode
+
+/obj/machinery/portable_atmospherics/canister/atmos_expose(datum/gas_mixture/air, exposed_temperature)
+	take_damage(5, BURN, 0)
 
 /obj/machinery/portable_atmospherics/canister/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
@@ -380,21 +388,21 @@
 		if(disassembled)
 			switch(mode)
 				if(CANISTER_TIER_1)
-					new /obj/item/stack/sheet/metal (loc, 10)
+					new /obj/item/stack/sheet/iron (loc, 10)
 				if(CANISTER_TIER_2)
-					new /obj/item/stack/sheet/metal (loc, 10)
+					new /obj/item/stack/sheet/iron (loc, 10)
 					new /obj/item/stack/sheet/plasteel (loc, 5)
 				if(CANISTER_TIER_3)
-					new /obj/item/stack/sheet/metal (loc, 10)
+					new /obj/item/stack/sheet/iron (loc, 10)
 					new /obj/item/stack/sheet/plasteel (loc, 5)
 					new /obj/item/stack/sheet/bluespace_crystal (loc, 1)
 		else
-			new /obj/item/stack/sheet/metal (loc, 5)
+			new /obj/item/stack/sheet/iron (loc, 5)
 	qdel(src)
 
 /obj/machinery/portable_atmospherics/canister/welder_act(mob/living/user, obj/item/I)
 	..()
-	if(user.a_intent == INTENT_HARM)
+	if(user.combat_mode)
 		return FALSE
 
 	if(!I.tool_start_check(user, amount=0))
@@ -422,7 +430,7 @@
 	var/datum/gas_mixture/expelled_gas = air_contents.remove(air_contents.total_moles())
 	var/turf/T = get_turf(src)
 	T.assume_air(expelled_gas)
-	air_update_turf()
+	air_update_turf(FALSE, FALSE)
 
 	obj_break()
 	density = FALSE
@@ -438,7 +446,7 @@
 	if(.)
 		if(close_valve)
 			valve_open = FALSE
-			update_icon()
+			update_appearance()
 			investigate_log("Valve was <b>closed</b> by [key_name(user)].", INVESTIGATE_ATMOS)
 		else if(valve_open && holding)
 			investigate_log("[key_name(user)] started a transfer into [holding].", INVESTIGATE_ATMOS)
@@ -457,7 +465,7 @@
 		var/datum/gas_mixture/target_air = holding ? holding.air_contents : T.return_air()
 
 		if(air_contents.release_gas_to(target_air, release_pressure) && !holding)
-			air_update_turf()
+			air_update_turf(FALSE, FALSE)
 
 	var/our_pressure = air_contents.return_pressure()
 	var/our_temperature = air_contents.return_temperature()
@@ -465,7 +473,7 @@
 	///function used to check the limit of the canisters and also set the amount of damage that the canister can receive, if the heat and pressure are way higher than the limit the more damage will be done
 	if(our_temperature > heat_limit || our_pressure > pressure_limit)
 		take_damage(clamp((our_temperature/heat_limit) * (our_pressure/pressure_limit) * delta_time * 2, 5, 50), BURN, 0)
-	update_icon()
+	update_appearance()
 
 /obj/machinery/portable_atmospherics/canister/ui_state(mob/user)
 	return GLOB.physical_state
@@ -613,4 +621,4 @@
 					investigate_log("[key_name(usr)] removed the [holding], leaving the valve open and transferring into the <span class='boldannounce'>air</span>.", INVESTIGATE_ATMOS)
 				replace_tank(usr, FALSE)
 				. = TRUE
-	update_icon()
+	update_appearance()

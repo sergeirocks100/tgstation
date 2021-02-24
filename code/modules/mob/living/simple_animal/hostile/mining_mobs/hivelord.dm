@@ -73,7 +73,7 @@
 	speed = 3
 	maxHealth = 1
 	health = 1
-	movement_type = FLYING
+	is_flying_animal = TRUE
 	harm_intent_damage = 5
 	melee_damage_lower = 2
 	melee_damage_upper = 2
@@ -188,7 +188,7 @@
 	var/can_infest_dead = FALSE
 
 
-/mob/living/simple_animal/hostile/asteroid/hivelordbrood/legion/Life()
+/mob/living/simple_animal/hostile/asteroid/hivelordbrood/legion/Life(delta_time = SSMOBS_DT, times_fired)
 	. = ..()
 	if(stat == DEAD || !isturf(loc))
 		return

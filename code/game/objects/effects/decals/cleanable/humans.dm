@@ -7,6 +7,7 @@
 	blood_state = BLOOD_STATE_HUMAN
 	bloodiness = BLOOD_AMOUNT_PER_DECAL
 	beauty = -100
+	clean_type = CLEAN_TYPE_BLOOD
 
 /obj/effect/decal/cleanable/blood/replace_decal(obj/effect/decal/cleanable/blood/C)
 	C.add_blood_DNA(return_blood_DNA())
@@ -60,6 +61,8 @@
 	. = ..()
 	reagents.add_reagent(/datum/reagent/liquidgibs, 5)
 	RegisterSignal(src, COMSIG_MOVABLE_PIPE_EJECTING, .proc/on_pipe_eject)
+	if(mapload) //Don't rot at roundstart for the love of god
+		return
 	if(already_rotting)
 		start_rotting(rename=FALSE)
 	else
@@ -174,7 +177,7 @@
 	icon_state = "" //All of the footprint visuals come from overlays
 	if(mapload)
 		entered_dirs |= dir //Keep the same appearance as in the map editor
-		update_icon()
+		update_appearance()
 
 //Rotate all of the footprint directions too
 /obj/effect/decal/cleanable/blood/footprints/setDir(newdir)
@@ -193,25 +196,27 @@
 		if(old_exited_dirs & Ddir)
 			exited_dirs |= angle2dir_cardinal(dir2angle(Ddir) + ang_change)
 
-	update_icon()
+	update_appearance()
 	return ..()
 
 /obj/effect/decal/cleanable/blood/footprints/update_icon()
-	cut_overlays()
+	. = ..()
+	alpha = min(BLOODY_FOOTPRINT_BASE_ALPHA + (255 - BLOODY_FOOTPRINT_BASE_ALPHA) * bloodiness / (BLOOD_ITEM_MAX / 2), 255)
 
+/obj/effect/decal/cleanable/blood/footprints/update_overlays()
+	. = ..()
 	for(var/Ddir in GLOB.cardinals)
 		if(entered_dirs & Ddir)
 			var/image/bloodstep_overlay = GLOB.bloody_footprints_cache["entered-[blood_state]-[Ddir]"]
 			if(!bloodstep_overlay)
 				GLOB.bloody_footprints_cache["entered-[blood_state]-[Ddir]"] = bloodstep_overlay = image(icon, "[blood_state]1", dir = Ddir)
-			add_overlay(bloodstep_overlay)
+			. += bloodstep_overlay
+
 		if(exited_dirs & Ddir)
 			var/image/bloodstep_overlay = GLOB.bloody_footprints_cache["exited-[blood_state]-[Ddir]"]
 			if(!bloodstep_overlay)
 				GLOB.bloody_footprints_cache["exited-[blood_state]-[Ddir]"] = bloodstep_overlay = image(icon, "[blood_state]2", dir = Ddir)
-			add_overlay(bloodstep_overlay)
-
-	alpha = min(BLOODY_FOOTPRINT_BASE_ALPHA + (255 - BLOODY_FOOTPRINT_BASE_ALPHA) * bloodiness / (BLOOD_ITEM_MAX / 2), 255)
+			. += bloodstep_overlay
 
 
 /obj/effect/decal/cleanable/blood/footprints/examine(mob/user)

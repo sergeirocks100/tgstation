@@ -14,25 +14,34 @@
 	foodtypes = MEAT
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/food/carpmeat
-	name = "carp fillet"
-	desc = "A fillet of spess carp meat."
+
+/obj/item/food/fishmeat
+	name = "fish fillet"
+	desc = "A fillet of some fish meat."
 	icon_state = "fishfillet"
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/toxin/carpotoxin = 2, /datum/reagent/consumable/nutriment/vitamin = 2)
+	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/consumable/nutriment/vitamin = 2)
 	bite_consumption = 6
 	tastes = list("fish" = 1)
 	foodtypes = MEAT
 	eatverbs = list("bite","chew","gnaw","swallow","chomp")
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/food/carpmeat/Initialize()
-	. = ..()
-	if(!istype(src, /obj/item/food/carpmeat/imitation))
-		AddElement(/datum/element/swabable, CELL_LINE_TABLE_CARP, CELL_VIRUS_TABLE_GENERIC_MOB)
+/obj/item/food/fishmeat/carp
+	name = "carp fillet"
+	desc = "A fillet of spess carp meat."
+	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/toxin/carpotoxin = 2, /datum/reagent/consumable/nutriment/vitamin = 2)
+	/// Cytology category you can swab the meat for.
+	var/cell_line = CELL_LINE_TABLE_CARP
 
-/obj/item/food/carpmeat/imitation
+/obj/item/food/fishmeat/carp/Initialize()
+	. = ..()
+	if(cell_line)
+		AddElement(/datum/element/swabable, cell_line, CELL_VIRUS_TABLE_GENERIC_MOB)
+
+/obj/item/food/fishmeat/carp/imitation
 	name = "imitation carp fillet"
 	desc = "Almost just like the real thing, kinda."
+	cell_line = null
 
 /obj/item/food/fishfingers
 	name = "fish fingers"
@@ -324,7 +333,7 @@
 	foodtypes = MEAT | SUGAR
 	w_class = WEIGHT_CLASS_TINY
 	var/faction
-	var/spawned_mob = /mob/living/carbon/monkey
+	var/spawned_mob = /mob/living/carbon/human/species/monkey
 
 /obj/item/food/monkeycube/proc/Expand()
 	var/mob/spammer = get_mob_by_key(fingerprintslast)
@@ -823,6 +832,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 2, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/cooking_oil = 2)
 	tastes = list("bacon" = 1)
 	foodtypes = MEAT | BREAKFAST
+	burns_on_grill = TRUE
 
 /obj/item/food/meat/slab/gondola
 	name = "gondola meat"
@@ -855,6 +865,7 @@
 /obj/item/food/meat/rawcrab
 	name = "raw crab meat"
 	desc = "A pile of raw crab meat."
+	icon_state = "crabmeatraw"
 	microwaved_type = /obj/item/food/meat/crab
 	bite_consumption = 3
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 3, /datum/reagent/consumable/cooking_oil = 3)

@@ -55,9 +55,12 @@
 	maxHealth = 80
 	health = 80
 	damage_coeff = list(BRUTE = 1, BURN = 1, TOX = 1, CLONE = 1, STAMINA = 1, OXY = 1)
+	unsuitable_cold_damage = 10
+	unsuitable_heat_damage = 10
 	obj_damage = 30
 	melee_damage_lower = 20
 	melee_damage_upper = 25
+	combat_mode = TRUE
 	faction = list("spiders")
 	pass_flags = PASSTABLE
 	move_to_delay = 6
@@ -98,15 +101,8 @@
 	GLOB.spidermobs -= src
 	return ..()
 
-/mob/living/simple_animal/hostile/poison/giant_spider/handle_temperature_damage()
-	if(bodytemperature < minbodytemp)
-		adjustBruteLoss(20)
-		throw_alert("temp", /atom/movable/screen/alert/cold, 3)
-	else if(bodytemperature > maxbodytemp)
-		adjustBruteLoss(20)
-		throw_alert("temp", /atom/movable/screen/alert/hot, 3)
-	else
-		clear_alert("temp")
+/mob/living/simple_animal/hostile/poison/giant_spider/mob_negates_gravity()
+	return ..() || (locate(/obj/structure/spider/stickyweb) in loc)
 
 /**
  * # Spider Hunter
@@ -336,7 +332,7 @@
 				if(ishuman(living_target) && (living_target.stat != DEAD || !consumed_mobs[living_target.tag])) //if they're not dead, you can consume them anyway
 					consumed_mobs[living_target.tag] = TRUE
 					fed++
-					lay_eggs.UpdateButtonIcon(TRUE)
+					lay_eggs_enriched.UpdateButtonIcon(TRUE)
 					visible_message("<span class='danger'>[src] sticks a proboscis into [living_target] and sucks a viscous substance out.</span>","<span class='notice'>You suck the nutriment out of [living_target], feeding you enough to lay a cluster of eggs.</span>")
 					living_target.death() //you just ate them, they're dead.
 				else
@@ -402,6 +398,7 @@
 /obj/effect/proc_holder/wrap/update_icon()
 	action.button_icon_state = "wrap_[active]"
 	action.UpdateButtonIcon()
+	return ..()
 
 /obj/effect/proc_holder/wrap/Click()
 	if(!istype(usr, /mob/living/simple_animal/hostile/poison/giant_spider/midwife))
@@ -459,6 +456,7 @@
 /obj/effect/proc_holder/tarantula_charge/update_icon()
 	action.button_icon_state = "wrap_[active]"
 	action.UpdateButtonIcon()
+	return ..()
 
 /obj/effect/proc_holder/tarantula_charge/Click()
 	if(!istype(usr, /mob/living/simple_animal/hostile/poison/giant_spider/tarantula))
@@ -701,4 +699,7 @@
 /mob/living/simple_animal/hostile/poison/giant_spider/viper/wizard
 	maxHealth = 80
 	health = 80
-	ventcrawler = VENTCRAWLER_ALWAYS
+
+/mob/living/simple_animal/hostile/poison/giant_spider/viper/wizard/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT)
