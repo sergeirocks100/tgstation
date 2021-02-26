@@ -12874,6 +12874,13 @@
 /turf/open/floor/iron,
 /area/cargo/miningdock)
 "aHY" = (
+/obj/machinery/button/door{
+	id = "Cabin2";
+	name = "Dorm Bolt Control";
+	pixel_x = 24;
+	pixel_y = 24;
+	specialfunctions = 4
+	},
 /turf/open/floor/wood,
 /area/commons/dorms)
 "aHZ" = (
@@ -16424,6 +16431,13 @@
 /turf/open/floor/iron,
 /area/commons/dorms)
 "aRL" = (
+/obj/machinery/button/door{
+	id = "Cabin3";
+	name = "Dorm Bolt Control";
+	pixel_x = 24;
+	pixel_y = -24;
+	specialfunctions = 4
+	},
 /turf/open/floor/iron/grimy,
 /area/commons/dorms)
 "aRM" = (
@@ -16435,6 +16449,13 @@
 /turf/open/floor/iron/grimy,
 /area/commons/dorms)
 "aRO" = (
+/obj/machinery/button/door{
+	id = "Cabin4";
+	name = "Dorm Bolt Control";
+	pixel_x = 24;
+	pixel_y = -24;
+	specialfunctions = 4
+	},
 /turf/open/floor/carpet,
 /area/commons/dorms)
 "aRP" = (
@@ -16920,7 +16941,8 @@
 "aSY" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock{
-	name = "Cabin"
+	id_tag = "Cabin3";
+	name = "Cabin 3"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 2
@@ -25666,6 +25688,20 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/commons/dorms)
+"cHu" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	id_tag = "Cabin4";
+	name = "Cabin 4"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 2
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/commons/dorms)
 "cIB" = (
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/neutral{
@@ -29256,6 +29292,16 @@
 	},
 /turf/open/floor/iron/dark,
 /area/service/chapel/main)
+"iDm" = (
+/obj/machinery/button/door{
+	id = "Cabin1";
+	name = "Dorm Bolt Control";
+	pixel_x = 24;
+	pixel_y = 24;
+	specialfunctions = 4
+	},
+/turf/open/floor/iron/grimy,
+/area/commons/dorms)
 "iEA" = (
 /obj/structure/toilet{
 	dir = 4
@@ -32717,6 +32763,20 @@
 	},
 /turf/open/floor/iron/white,
 /area/science/research)
+"odp" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	id_tag = "Cabin1";
+	name = "Cabin 1"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 2
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/commons/dorms)
 "ofR" = (
 /obj/structure/bed/roller,
 /obj/machinery/iv_drip,
@@ -40325,6 +40385,20 @@
 	},
 /turf/open/floor/iron,
 /area/security/checkpoint)
+"vKh" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	id_tag = "Cabin2";
+	name = "Cabin 2"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 2
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/commons/dorms)
 "vKG" = (
 /obj/machinery/recharge_station,
 /obj/effect/landmark/start/cyborg,
@@ -73636,7 +73710,7 @@ aRL
 aSY
 axS
 cFK
-aSY
+vKh
 aHY
 aOq
 sJG
@@ -74404,11 +74478,11 @@ aKE
 sJG
 aQR
 aRO
-aSY
+cHu
 axS
 aUT
-aSY
-aRL
+odp
+iDm
 aOt
 sJG
 aYx
