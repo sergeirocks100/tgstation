@@ -20,6 +20,12 @@
 /obj/structure/closet/emcloset/anchored
 	anchored = TRUE
 
+/obj/structure/closet/emcloset/winter
+	desc = "It's stocked with oxygen and warm jackets."
+
+/obj/structure/closet/emcloset/winter/anchored
+	anchored = TRUE
+
 /obj/structure/closet/emcloset/PopulateContents()
 	..()
 
@@ -173,3 +179,8 @@
 	..()
 	for(var/i in 1 to 8)
 		new /obj/item/ammo_casing/shotgun/beanbag(src)
+
+/obj/structure/closet/icemoon_eva
+	name = "\improper EVA closet"
+	desc = "It's a storage unit for cold-protective suits."
+	icon_state = "emergency"

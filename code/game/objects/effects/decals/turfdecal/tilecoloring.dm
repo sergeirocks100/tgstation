@@ -38,10 +38,19 @@
 	name = "brown corner"
 	color = "#A46106"
 
+/obj/effect/turf_decal/tile/orange
+	name = "orange corner"
+	color = "#E53900"
+
 /obj/effect/turf_decal/tile/neutral
 	name = "neutral corner"
 	color = "#D4D4D4"
 	alpha = 50
+
+/obj/effect/turf_decal/tile/dark
+	name = "dark corner"
+	color = "#1A1A1A"
+	alpha = 175
 
 /obj/effect/turf_decal/tile/random // so many colors
 	name = "colorful corner"
@@ -399,6 +408,54 @@
 /obj/effect/turf_decal/trimline/brown/filled/shrink_ccw
 	icon_state = "trimline_shrink_ccw"
 
+/obj/effect/turf_decal/trimline/orange
+	color = "#E53900"
+
+/obj/effect/turf_decal/trimline/orange/line
+	icon_state = "trimline"
+
+/obj/effect/turf_decal/trimline/orange/corner
+	icon_state = "trimline_corner"
+
+/obj/effect/turf_decal/trimline/orange/end
+	icon_state = "trimline_end"
+
+/obj/effect/turf_decal/trimline/orange/arrow_cw
+	icon_state = "trimline_arrow_cw"
+
+/obj/effect/turf_decal/trimline/orange/arrow_ccw
+	icon_state = "trimline_arrow_ccw"
+
+/obj/effect/turf_decal/trimline/orange/warning
+	icon_state = "trimline_warn"
+
+/obj/effect/turf_decal/trimline/orange/filled
+	icon_state = "trimline_box_fill"
+
+/obj/effect/turf_decal/trimline/orange/filled/line
+	icon_state = "trimline_fill"
+
+/obj/effect/turf_decal/trimline/orange/filled/corner
+	icon_state = "trimline_corner_fill"
+
+/obj/effect/turf_decal/trimline/orange/filled/end
+	icon_state = "trimline_end_fill"
+
+/obj/effect/turf_decal/trimline/orange/filled/arrow_cw
+	icon_state = "trimline_arrow_cw_fill"
+
+/obj/effect/turf_decal/trimline/orange/filled/arrow_ccw
+	icon_state = "trimline_arrow_ccw_fill"
+
+/obj/effect/turf_decal/trimline/orange/filled/warning
+	icon_state = "trimline_warn_fill"
+
+/obj/effect/turf_decal/trimline/orange/filled/shrink_cw
+	icon_state = "trimline_shrink_cw"
+
+/obj/effect/turf_decal/trimline/orange/filled/shrink_ccw
+	icon_state = "trimline_shrink_ccw"
+
 /obj/effect/turf_decal/trimline/neutral
 	color = "#D4D4D4"
 	alpha = 50
@@ -447,3 +504,10 @@
 
 /obj/effect/turf_decal/trimline/neutral/filled/shrink_ccw
 	icon_state = "trimline_shrink_ccw"
+
+//Special Tiles
+/obj/effect/turf_decal/tile/noslip
+	icon_state = "tile_corner_noslip"
+
+/obj/effect/turf_decal/tile/noslip/grey
+	icon_state = "tile_corner_noslip_grey"

@@ -7,18 +7,40 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_com
 	normal_integrity = 450
 
+/obj/machinery/door/airlock/large/command
+	name = "large command airlock"
+	icon = 'icons/obj/doors/airlocks/station/large/command.dmi'
+	normal_integrity = 450
+
 /obj/machinery/door/airlock/security
 	icon = 'icons/obj/doors/airlocks/station/security.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_sec
 	normal_integrity = 450
 
+/obj/machinery/door/airlock/large/security
+	name = "large security airlock"
+	icon = 'icons/obj/doors/airlocks/station/large/security.dmi'
+	normal_integrity = 450
+
+/obj/machinery/door/airlock/large/security/warden
+	name = "large prison airlock"
+	icon = 'icons/obj/doors/airlocks/station/large/warden.dmi'
+
 /obj/machinery/door/airlock/engineering
 	icon = 'icons/obj/doors/airlocks/station/engineering.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_eng
 
+/obj/machinery/door/airlock/large/engineering
+	name = "large engineering airlock"
+	icon = 'icons/obj/doors/airlocks/station/large/engineering.dmi'
+
 /obj/machinery/door/airlock/medical
 	icon = 'icons/obj/doors/airlocks/station/medical.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_med
+
+/obj/machinery/door/airlock/large/medical
+	name = "large medical airlock"
+	icon = 'icons/obj/doors/airlocks/station/large/medical.dmi'
 
 /obj/machinery/door/airlock/maintenance
 	name = "maintenance access"
@@ -41,9 +63,17 @@
 	icon = 'icons/obj/doors/airlocks/station/atmos.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_atmo
 
+/obj/machinery/door/airlock/large/atmos
+	name = "large atmospherics airlock"
+	icon = 'icons/obj/doors/airlocks/station/large/atmos.dmi'
+
 /obj/machinery/door/airlock/research
 	icon = 'icons/obj/doors/airlocks/station/research.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_research
+
+/obj/machinery/door/airlock/large/research
+	name = "large research airlock"
+	icon = 'icons/obj/doors/airlocks/station/large/research.dmi'
 
 /obj/machinery/door/airlock/freezer
 	name = "freezer airlock"
@@ -58,6 +88,15 @@
 	icon = 'icons/obj/doors/airlocks/station/virology.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_viro
 
+/obj/machinery/door/airlock/large/virology
+	name = "large virology airlock"
+	icon = 'icons/obj/doors/airlocks/station/large/virology.dmi'
+
+/obj/machinery/door/airlock/exploration
+	name = "exploration airlock"
+	icon = 'icons/obj/doors/airlocks/station/exploration.dmi'
+	assemblytype = /obj/structure/door_assembly/door_assembly_explo
+
 //////////////////////////////////
 /*
 	Station Airlocks Glass
@@ -66,6 +105,10 @@
 /obj/machinery/door/airlock/glass
 	opacity = FALSE
 	glass = TRUE
+
+/obj/machinery/door/airlock/large/glass
+	name = "large glass airlock"
+	icon = 'icons/obj/doors/airlocks/glass_large/glass_large.dmi'
 
 /obj/machinery/door/airlock/glass/incinerator
 	autoclose = FALSE
@@ -86,8 +129,17 @@
 	glass = TRUE
 	normal_integrity = 400
 
+/obj/machinery/door/airlock/large/command/glass
+	opacity = 0
+	glass = TRUE
+	normal_integrity = 400
+
 /obj/machinery/door/airlock/engineering/glass
 	opacity = FALSE
+	glass = TRUE
+
+/obj/machinery/door/airlock/large/engineering/glass
+	opacity = 0
 	glass = TRUE
 
 /obj/machinery/door/airlock/engineering/glass/critical
@@ -98,12 +150,30 @@
 	glass = TRUE
 	normal_integrity = 400
 
+/obj/machinery/door/airlock/large/security/glass
+	opacity = 0
+	glass = TRUE
+	normal_integrity = 400
+
+/obj/machinery/door/airlock/large/security/warden/glass
+	opacity = 0
+	glass = TRUE
+	normal_integrity = 400
+
 /obj/machinery/door/airlock/medical/glass
 	opacity = FALSE
 	glass = TRUE
 
+/obj/machinery/door/airlock/large/medical/glass
+	opacity = 0
+	glass = TRUE
+
 /obj/machinery/door/airlock/research/glass
 	opacity = FALSE
+	glass = TRUE
+
+/obj/machinery/door/airlock/large/research/glass
+	opacity = 0
 	glass = TRUE
 
 /obj/machinery/door/airlock/research/glass/incinerator
@@ -128,6 +198,10 @@
 	opacity = FALSE
 	glass = TRUE
 
+/obj/machinery/door/airlock/large/atmos/glass
+	opacity = 0
+	glass = TRUE
+
 /obj/machinery/door/airlock/atmos/glass/critical
 	critical_machine = TRUE //stops greytide virus from opening & bolting doors in critical positions, such as the SM chamber.
 
@@ -139,6 +213,10 @@
 	opacity = FALSE
 	glass = TRUE
 
+/obj/machinery/door/airlock/large/virology/glass
+	opacity = 0
+	glass = TRUE
+
 /obj/machinery/door/airlock/maintenance/glass
 	opacity = FALSE
 	glass = TRUE
@@ -147,6 +225,10 @@
 	opacity = FALSE
 	glass = TRUE
 	normal_integrity = 200
+
+/obj/machinery/door/airlock/exploration/glass
+	opacity = FALSE
+	glass = TRUE
 
 //////////////////////////////////
 /*
