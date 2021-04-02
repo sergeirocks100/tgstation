@@ -6434,6 +6434,15 @@
 	},
 /turf/open/floor/iron,
 /area/commons/fitness/recreation)
+"dLT" = (
+/obj/machinery/requests_console{
+	department = "Bar";
+	departmentType = 2;
+	pixel_x = 30;
+	receive_ore_updates = 1
+	},
+/turf/open/floor/iron,
+/area/cargo/miningoffice)
 "dMh" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/purple{
@@ -20251,6 +20260,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
+	},
+/obj/machinery/requests_console{
+	department = "Kitchen";
+	departmentType = 2;
+	pixel_x = -30
 	},
 /turf/open/floor/iron/cafeteria,
 /area/service/kitchen)
@@ -62980,7 +62994,7 @@ aGU
 cYc
 wKj
 wTj
-wTj
+dLT
 wTj
 xqf
 xqf
