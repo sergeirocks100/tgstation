@@ -1,0 +1,247 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall/mineral/titanium/overspace,
+/area/shuttle/escape)
+"f" = (
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/escape)
+"g" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/escape)
+"j" = (
+/obj/machinery/stasis,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/escape)
+"l" = (
+/turf/open/floor/mineral/titanium/tiled/blue,
+/area/shuttle/escape)
+"m" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/titanium/tiled/blue,
+/area/shuttle/escape)
+"n" = (
+/obj/machinery/computer/emergency_shuttle{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/tiled/blue,
+/area/shuttle/escape)
+"s" = (
+/obj/machinery/stasis,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#e8eaff"
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/escape)
+"t" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/tiled/blue,
+/area/shuttle/escape)
+"v" = (
+/obj/machinery/door/airlock/titanium{
+	name = "Emergency Shuttle Airlock"
+	},
+/obj/docking_port/mobile/emergency{
+	height = 7;
+	name = "Uterus emergency shuttle";
+	width = 15
+	},
+/turf/open/floor/mineral/titanium/tiled/blue,
+/area/shuttle/escape)
+"z" = (
+/obj/structure/shuttle/engine/propulsion/burst/cargo{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/shuttle/escape)
+"A" = (
+/obj/structure/chair,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/titanium/tiled/blue,
+/area/shuttle/escape)
+"C" = (
+/obj/machinery/door/airlock/titanium{
+	name = "Emergency Shuttle Airlock"
+	},
+/turf/open/floor/mineral/titanium/tiled/blue,
+/area/shuttle/escape)
+"D" = (
+/obj/structure/window/reinforced{
+	dir = 1;
+	pixel_y = 1
+	},
+/obj/item/storage/firstaid,
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#e8eaff"
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/escape)
+"H" = (
+/obj/structure/chair,
+/turf/open/floor/mineral/titanium/tiled/blue,
+/area/shuttle/escape)
+"I" = (
+/obj/item/extinguisher,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/escape)
+"K" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/tiled/blue,
+/area/shuttle/escape)
+"R" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/shuttle/escape)
+"S" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/escape)
+"U" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/escape)
+"V" = (
+/obj/item/extinguisher,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/escape)
+"X" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/escape)
+"Z" = (
+/obj/structure/window/reinforced,
+/obj/item/storage/firstaid,
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#e8eaff"
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/escape)
+
+(1,1,1) = {"
+a
+S
+S
+S
+S
+v
+S
+S
+R
+S
+S
+C
+S
+S
+a
+"}
+(2,1,1) = {"
+g
+U
+t
+l
+m
+m
+m
+K
+l
+m
+m
+m
+t
+U
+g
+"}
+(3,1,1) = {"
+z
+m
+m
+A
+m
+A
+m
+A
+l
+A
+l
+H
+m
+m
+R
+"}
+(4,1,1) = {"
+z
+l
+l
+A
+m
+A
+l
+A
+m
+A
+m
+A
+A
+n
+R
+"}
+(5,1,1) = {"
+z
+l
+l
+H
+l
+H
+l
+H
+l
+A
+m
+A
+m
+l
+R
+"}
+(6,1,1) = {"
+g
+S
+D
+j
+X
+j
+V
+s
+I
+j
+f
+j
+Z
+S
+g
+"}
+(7,1,1) = {"
+a
+S
+S
+S
+S
+S
+S
+S
+R
+S
+S
+S
+S
+S
+a
+"}
