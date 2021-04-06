@@ -1692,7 +1692,7 @@
 /turf/open/floor/iron,
 /area/command/teleporter)
 "bLy" = (
-/obj/machinery/atmospherics/pipe/smart/heat_exchanging/simple{
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 4
 	},
 /turf/open/space/basic,
@@ -3417,7 +3417,7 @@
 /turf/open/floor/iron/white,
 /area/science/lab)
 "dwT" = (
-/obj/machinery/atmospherics/pipe/smart/heat_exchanging/simple{
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 10
 	},
 /turf/open/space/basic,
@@ -3642,7 +3642,7 @@
 /area/service/chapel/main)
 "dHn" = (
 /obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/heat_exchanging/junction{
+/obj/machinery/atmospherics/pipe/heat_exchanging/junction{
 	dir = 4
 	},
 /turf/open/space/basic,
@@ -7260,7 +7260,7 @@
 /area/science/mixing)
 "hrA" = (
 /obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/heat_exchanging/simple{
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 10
 	},
 /turf/open/space/basic,
@@ -9389,7 +9389,7 @@
 /turf/open/floor/iron/white,
 /area/medical/medbay)
 "jyM" = (
-/obj/machinery/atmospherics/pipe/smart/heat_exchanging/simple{
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 9
 	},
 /turf/open/space/basic,
@@ -17905,7 +17905,7 @@
 /area/engineering/atmos)
 "rYS" = (
 /obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/heat_exchanging/simple{
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 4
 	},
 /turf/open/space/basic,
@@ -19210,7 +19210,7 @@
 /area/service/lawoffice)
 "thW" = (
 /obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/heat_exchanging/simple{
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 5
 	},
 /turf/open/space/basic,
@@ -20447,7 +20447,7 @@
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "usr" = (
-/obj/machinery/atmospherics/pipe/smart/heat_exchanging/simple,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /turf/open/space/basic,
 /area/space)
 "usS" = (
@@ -22005,7 +22005,7 @@
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "wfn" = (
-/obj/machinery/atmospherics/pipe/smart/heat_exchanging/simple{
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 6
 	},
 /turf/open/space/basic,
@@ -23847,7 +23847,7 @@
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "xTJ" = (
-/obj/machinery/atmospherics/pipe/smart/heat_exchanging/simple{
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 5
 	},
 /turf/open/space/basic,
