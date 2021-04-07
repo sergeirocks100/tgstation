@@ -255,7 +255,7 @@ GLOBAL_VAR_INIT(dynamic_forced_threat_level, -1)
 	return ..()
 
 /datum/game_mode/dynamic/send_intercept()
-	. = "<b><i>Central Command Status Summary</i></b><hr>"
+	. = "<b><i>Syndicate Command Status Summary</i></b><hr>"
 	var/shown_threat
 	if(prob(FAKE_REPORT_CHANCE))
 		shown_threat = rand(1, 100)
@@ -289,7 +289,7 @@ GLOBAL_VAR_INIT(dynamic_forced_threat_level, -1)
 	. += generate_station_goal_report()
 	. += generate_station_trait_report()
 
-	print_command_report(., "Central Command Status Summary", announce=FALSE)
+	print_command_report(., "Syndicate Command Status Summary", announce=FALSE)
 	priority_announce("A summary has been copied and printed to all communications consoles.", "Security level elevated.", ANNOUNCER_INTERCEPT)
 	if(GLOB.security_level < SEC_LEVEL_BLUE)
 		set_security_level(SEC_LEVEL_BLUE)

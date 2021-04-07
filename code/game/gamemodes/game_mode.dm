@@ -301,8 +301,8 @@
 
 
 /datum/game_mode/proc/send_intercept()
-	var/intercepttext = "<b><i>Central Command Status Summary</i></b><hr>"
-	intercepttext += "<b>Central Command has intercepted and partially decoded a Syndicate transmission with vital information regarding their movements. The following report outlines the most \
+	var/intercepttext = "<b><i>Syndicate Command Status Summary</i></b><hr>"
+	intercepttext += "<b>Syndicate Command has intercepted and partially decoded a Syndicate transmission with vital information regarding their movements. The following report outlines the most \
 	likely threats to appear in your sector.</b>"
 	var/list/report_weights = config.mode_false_report_weight.Copy()
 	report_weights[report_type] = 0 //Prevent the current mode from being falsely selected.
@@ -325,7 +325,7 @@
 	intercepttext += generate_station_goal_report()
 	intercepttext += generate_station_trait_report()
 
-	print_command_report(intercepttext, "Central Command Status Summary", announce=FALSE)
+	print_command_report(intercepttext, "Syndicate Command Status Summary", announce=FALSE)
 	priority_announce("A summary has been copied and printed to all communications consoles.", "Enemy communication intercepted. Security level elevated.", ANNOUNCER_INTERCEPT)
 	if(GLOB.security_level < SEC_LEVEL_BLUE)
 		set_security_level(SEC_LEVEL_BLUE)
@@ -512,7 +512,7 @@
 			for(var/dead_dudes_job in reopened_jobs)
 				reopened_job_report_positions = "[reopened_job_report_positions ? "[reopened_job_report_positions]\n":""][dead_dudes_job]"
 
-			var/suicide_command_report = "<font size = 3><b>Central Command Human Resources Board</b><br>\
+			var/suicide_command_report = "<font size = 3><b>Syndicate Command Human Resources Board</b><br>\
 								Notice of Personnel Change</font><hr>\
 								To personnel management staff aboard [station_name()]:<br><br>\
 								Our medical staff have detected a series of anomalies in the vital sensors \
@@ -526,7 +526,7 @@
 								<i>The following positions have been reopened on our behalf:<br><br>\
 								[reopened_job_report_positions]</i>"
 
-			print_command_report(suicide_command_report, "Central Command Personnel Update")
+			print_command_report(suicide_command_report, "Syndicate Command Personnel Update")
 
 //////////////////////////
 //Reports player logouts//
