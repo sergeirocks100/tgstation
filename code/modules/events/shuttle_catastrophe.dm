@@ -18,7 +18,7 @@
 	var/datum/map_template/shuttle/new_shuttle
 
 /datum/round_event/shuttle_catastrophe/announce(fake)
-	var/cause = pick("was attacked by [syndicate_name()] Operatives", "mysteriously teleported away", "had its refuelling crew mutiny",
+	var/cause = pick("was attacked by Nanotrasen Operatives", "mysteriously teleported away", "had its refuelling crew mutiny",
 		"was found with its engines stolen", "\[REDACTED\]", "flew into the sunset, and melted", "learned something from a very wise cow, and left on its own",
 		"had cloning devices on it", "had its shuttle inspector put the shuttle in reverse instead of park, causing the shuttle to crash into the hangar")
 	var/message = "Your emergency shuttle [cause]. "
@@ -29,7 +29,7 @@
 			message += " You have been awarded a bonus from [command_name()] for smart spending."
 	else
 		message += "Your replacement shuttle will be the [new_shuttle.name] until further notice."
-	priority_announce(message, "[command_name()] Spacecraft Engineering")
+	priority_announce(message, "MI13")
 
 /datum/round_event/shuttle_catastrophe/setup()
 	if(SSshuttle.shuttle_insurance)
