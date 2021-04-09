@@ -2777,6 +2777,13 @@
 	},
 /turf/open/floor/plating,
 /area/cargo/qm)
+"cNf" = (
+/obj/structure/sign/warning/securearea{
+	name = "\improper VACUUM AREA sign"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/green,
+/turf/closed/wall,
+/area/science/mixing)
 "cNn" = (
 /obj/structure/sink{
 	dir = 8;
@@ -4078,7 +4085,7 @@
 /area/service/chapel/main)
 "dYm" = (
 /obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/dark/visible,
 /turf/open/floor/iron/white,
 /area/science/mixing)
 "dZj" = (
@@ -4233,6 +4240,7 @@
 "ejR" = (
 /obj/effect/spawner/structure/window/hollow/reinforced,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/dark/visible,
 /turf/open/floor/plating,
 /area/science/mixing)
 "eka" = (
@@ -9057,9 +9065,7 @@
 /area/engineering/atmos)
 "jaC" = (
 /obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/green,
 /turf/open/floor/iron/white,
 /area/science/mixing)
 "jbj" = (
@@ -9083,7 +9089,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "jbV" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
 /turf/open/floor/engine/vacuum,
@@ -18699,6 +18705,12 @@
 /obj/machinery/power/apc/auto_name/east,
 /turf/open/floor/iron,
 /area/hallway/primary/aft)
+"siG" = (
+/obj/machinery/atmospherics/pipe/layer_manifold/general/hidden{
+	dir = 1
+	},
+/turf/closed/wall/r_wall,
+/area/science/mixing)
 "siM" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/libraryconsole,
@@ -18927,10 +18939,8 @@
 	pixel_x = 24;
 	pixel_y = 10
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/smart/simple/general/hidden,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/green,
 /turf/open/floor/engine/vacuum,
 /area/science/mixing)
 "srl" = (
@@ -21225,9 +21235,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port)
 "uzi" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/green,
 /turf/open/floor/iron/white,
 /area/science/mixing)
 "uzl" = (
@@ -71384,11 +71392,11 @@ upM
 xPG
 xPG
 blu
-grc
+siG
 syE
 fdv
 sqB
-grc
+siG
 qhU
 xPG
 upM
@@ -71644,7 +71652,7 @@ tjG
 puj
 mQb
 cKl
-mQb
+cNf
 grc
 tjG
 xPG
