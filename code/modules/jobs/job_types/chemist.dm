@@ -24,21 +24,25 @@
 	family_heirlooms = list(/obj/item/book/manual/wiki/chemistry, /obj/item/ph_booklet)
 
 /datum/outfit/job/chemist
-	name = "Chemist"
+	name = "Explosives Technician"
 	jobtype = /datum/job/chemist
 
-	glasses = /obj/item/clothing/glasses/science
-	belt = /obj/item/pda/chemist
-	l_pocket = /obj/item/reagent_containers/glass/bottle/random_buffer
-	r_pocket = /obj/item/reagent_containers/dropper
 	ears = /obj/item/radio/headset/headset_med
-	uniform = /obj/item/clothing/under/rank/medical/chemist
-	shoes = /obj/item/clothing/shoes/sneakers/white
-	suit =  /obj/item/clothing/suit/toggle/labcoat/chemist
-	backpack = /obj/item/storage/backpack/chemistry
-	satchel = /obj/item/storage/backpack/satchel/chem
-	duffelbag = /obj/item/storage/backpack/duffelbag/chemistry
-	box = /obj/item/storage/box/survival/medical
+	belt = /obj/item/storage/belt/utility/syndicate
+	l_pocket = /obj/item/pda/syndicate
+	uniform = /obj/item/clothing/under/syndicate
+	r_pocket = /obj/item/flashlight/seclite
+	glasses = /obj/item/clothing/glasses/sunglasses/chemical
+	gloves = /obj/item/clothing/gloves/color/black
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/beret/durathread
+	suit = /obj/item/clothing/suit/toggle/labcoat/chemist
+
+	backpack = /obj/item/storage/backpack/duffelbag/syndie
+	satchel = /obj/item/storage/backpack/duffelbag/syndie
+	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
+	box = /obj/item/storage/box/survival/syndie
+	pda_slot = ITEM_SLOT_LPOCKET
 
 	chameleon_extras = /obj/item/gun/syringe
 
