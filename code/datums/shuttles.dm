@@ -340,13 +340,7 @@
 	name = "Ministation emergency shuttle"
 	credit_cost = CARGO_CRATE_VALUE * 2
 	description = "Despite its namesake, this shuttle is actually only slightly smaller than standard, and still complete with a brig and medbay."
-	
-/datum/map_template/shuttle/emergency/uterus
-	suffix = "uterus"
-	name = "Uterus Station Emergency Shuttle"
-	credit_cost = CARGO_CRATE_VALUE * 2
-	description = "Despite its namesake, this shuttle is actually only slightly smaller than standard, and still complete with a brig and medbay."
-	
+
 /datum/map_template/shuttle/emergency/tram
 	suffix = "tram"
 	name = "Tram Station Emergency Shuttle"
@@ -537,10 +531,6 @@
 	suffix = "pubby"
 	name = "supply shuttle (Pubby)"
 
-/datum/map_template/shuttle/cargo/uterus
-	suffix = "uterus"
-	name = "supply shuttle (Uterus)"
-
 /datum/map_template/shuttle/emergency/delta
 	suffix = "delta"
 	name = "Delta Station Emergency Shuttle"
@@ -587,10 +577,6 @@
 /datum/map_template/shuttle/arrival/donut
 	suffix = "donut"
 	name = "arrival shuttle (Donut)"
-	
-/datum/map_template/shuttle/arrival/uterus
-	suffix = "uterus"
-	name = "arrival shuttle (Uterus)"
 
 /datum/map_template/shuttle/infiltrator/basic
 	suffix = "basic"
