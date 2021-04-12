@@ -1,0 +1,1057 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"b" = (
+/obj/structure/table,
+/obj/item/screwdriver,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"c" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/middle,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"e" = (
+/obj/structure/table,
+/obj/item/tank/internals/oxygen,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"f" = (
+/obj/machinery/door/airlock/public/glass,
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"g" = (
+/obj/structure/frame/computer{
+	anchored = 1
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"h" = (
+/obj/item/multitool,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"i" = (
+/obj/machinery/door/airlock/titanium,
+/obj/structure/cable,
+/obj/docking_port/mobile{
+	dir = 8;
+	dwidth = 4;
+	height = 21;
+	id = "whiteship";
+	launch_status = 0;
+	name = "White Ship";
+	port_direction = 4;
+	width = 35
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"j" = (
+/obj/machinery/computer/med_data{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"k" = (
+/obj/structure/rack,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"l" = (
+/obj/machinery/door/airlock/public/glass,
+/obj/structure/cable,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"m" = (
+/obj/structure/frame/computer{
+	anchored = 1;
+	dir = 1
+	},
+/obj/item/stack/cable_coil/cut,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"n" = (
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"o" = (
+/obj/structure/table,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"p" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/structure/bed,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"q" = (
+/obj/item/shard,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"r" = (
+/obj/item/shard{
+	icon_state = "medium"
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"s" = (
+/obj/structure/frame/computer{
+	anchored = 1;
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"t" = (
+/obj/structure/table,
+/obj/item/analyzer,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"u" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/end,
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"w" = (
+/obj/structure/table,
+/obj/item/storage/firstaid,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"x" = (
+/obj/machinery/door/poddoor{
+	id = "oldship_ruin_gun";
+	name = "pod bay door"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"y" = (
+/turf/closed/wall/mineral/titanium/overspace,
+/area/shuttle/abandoned)
+"z" = (
+/obj/structure/table,
+/obj/item/radio,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"B" = (
+/obj/machinery/power/apc/auto_name/west,
+/obj/structure/cable,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"C" = (
+/obj/structure/chair{
+	pixel_y = -2
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"D" = (
+/obj/machinery/door/window/northright,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"E" = (
+/obj/structure/rack,
+/obj/item/clothing/head/helmet/space/eva,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"F" = (
+/obj/machinery/door/airlock/public/glass,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"G" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/bed,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"H" = (
+/obj/machinery/computer/pod{
+	dir = 4;
+	id = "oldship_ruin_gun"
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"I" = (
+/obj/structure/cable,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"J" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned)
+"K" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"L" = (
+/obj/machinery/door/window,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"N" = (
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"O" = (
+/obj/machinery/mass_driver{
+	dir = 8;
+	id = "oldship_ruin_gun"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"P" = (
+/obj/machinery/portable_atmospherics/scrubber,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"R" = (
+/obj/structure/rack,
+/obj/item/clothing/suit/space/eva,
+/obj/item/clothing/mask/gas,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"S" = (
+/obj/item/scalpel,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"T" = (
+/obj/machinery/computer/camera_advanced/shuttle_docker/whiteship{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"U" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/middle{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"V" = (
+/obj/machinery/stasis,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"W" = (
+/obj/machinery/computer/shuttle/white_ship/bridge{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"X" = (
+/obj/machinery/door/airlock/titanium,
+/obj/structure/cable,
+/turf/open/floor/mineral/titanium/tiled/white,
+/area/shuttle/abandoned)
+"Y" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned)
+"Z" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/end{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+
+(1,1,1) = {"
+a
+a
+a
+a
+y
+J
+J
+U
+U
+Z
+U
+u
+U
+U
+J
+J
+y
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+a
+a
+y
+J
+J
+n
+n
+t
+T
+o
+W
+o
+n
+r
+J
+J
+a
+a
+a
+a
+"}
+(3,1,1) = {"
+a
+a
+y
+J
+J
+n
+n
+n
+n
+K
+K
+C
+n
+n
+q
+s
+J
+x
+y
+a
+a
+"}
+(4,1,1) = {"
+a
+y
+J
+J
+g
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+m
+J
+O
+J
+y
+a
+"}
+(5,1,1) = {"
+a
+Y
+Y
+Y
+J
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+J
+J
+f
+Y
+Y
+a
+"}
+(6,1,1) = {"
+y
+Y
+j
+Y
+Y
+n
+n
+n
+n
+n
+n
+n
+n
+n
+J
+J
+J
+n
+H
+Y
+y
+"}
+(7,1,1) = {"
+J
+V
+n
+V
+Y
+Y
+Y
+Y
+Y
+u
+F
+Z
+Y
+Y
+Y
+J
+n
+n
+n
+J
+J
+"}
+(8,1,1) = {"
+J
+n
+n
+n
+c
+h
+n
+n
+n
+n
+n
+n
+n
+J
+Y
+k
+n
+n
+n
+n
+J
+"}
+(9,1,1) = {"
+J
+V
+n
+n
+c
+I
+I
+I
+I
+I
+I
+I
+I
+I
+Y
+E
+n
+n
+n
+b
+J
+"}
+(10,1,1) = {"
+J
+n
+n
+S
+c
+n
+n
+J
+Y
+Y
+Y
+Y
+J
+I
+Y
+R
+n
+n
+n
+z
+J
+"}
+(11,1,1) = {"
+J
+J
+n
+n
+Y
+n
+n
+F
+n
+n
+n
+D
+Y
+I
+Y
+J
+n
+n
+n
+J
+J
+"}
+(12,1,1) = {"
+y
+J
+w
+n
+Y
+n
+n
+Y
+p
+e
+n
+G
+Y
+I
+J
+Y
+Y
+F
+Y
+Y
+y
+"}
+(13,1,1) = {"
+a
+J
+J
+n
+F
+n
+n
+Y
+L
+n
+n
+n
+F
+I
+n
+B
+n
+n
+Y
+Y
+a
+"}
+(14,1,1) = {"
+a
+y
+J
+Y
+Y
+n
+n
+J
+Y
+Y
+Y
+Y
+J
+I
+I
+I
+n
+J
+J
+y
+a
+"}
+(15,1,1) = {"
+a
+a
+y
+Y
+Y
+n
+n
+n
+n
+n
+n
+n
+n
+I
+n
+n
+J
+J
+y
+a
+a
+"}
+(16,1,1) = {"
+a
+a
+a
+y
+J
+J
+n
+n
+n
+n
+I
+I
+I
+I
+n
+J
+J
+y
+a
+a
+a
+"}
+(17,1,1) = {"
+a
+a
+a
+a
+y
+Y
+Y
+Y
+Y
+u
+l
+Z
+Y
+Y
+Y
+Y
+y
+a
+a
+a
+a
+"}
+(18,1,1) = {"
+a
+a
+a
+a
+a
+a
+Y
+P
+n
+n
+I
+n
+n
+n
+Y
+a
+a
+a
+a
+a
+a
+"}
+(19,1,1) = {"
+a
+a
+a
+a
+a
+a
+J
+J
+n
+n
+I
+n
+n
+J
+J
+a
+a
+a
+a
+a
+a
+"}
+(20,1,1) = {"
+a
+a
+a
+a
+a
+a
+y
+J
+n
+n
+I
+n
+n
+J
+y
+a
+a
+a
+a
+a
+a
+"}
+(21,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+J
+J
+n
+I
+n
+J
+J
+a
+a
+a
+a
+a
+a
+a
+"}
+(22,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+y
+J
+J
+I
+J
+J
+y
+a
+a
+a
+a
+a
+a
+a
+"}
+(23,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+y
+J
+X
+J
+y
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(24,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+J
+I
+J
+a
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(25,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+y
+J
+X
+J
+y
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(26,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+J
+J
+I
+J
+J
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(27,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+J
+n
+I
+n
+J
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(28,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+J
+N
+I
+n
+J
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(29,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+J
+n
+I
+n
+J
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(30,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+J
+n
+I
+n
+J
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(31,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+J
+n
+I
+n
+J
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(32,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+J
+n
+I
+n
+J
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(33,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+J
+n
+I
+N
+J
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(34,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+J
+J
+I
+J
+J
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(35,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+y
+Y
+i
+Y
+y
+a
+a
+a
+a
+a
+a
+a
+a
+"}
