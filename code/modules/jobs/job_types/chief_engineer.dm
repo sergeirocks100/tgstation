@@ -37,7 +37,7 @@
 	name = "Chief Engineering Officer"
 	jobtype = /datum/job/chief_engineer
 
-	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/advanced/silver
 	belt = /obj/item/storage/belt/utility/chief/full
 	ears = /obj/item/radio/headset/heads/ce
 	l_pocket = /obj/item/pda/syndicate

@@ -99,12 +99,6 @@ SUBSYSTEM_DEF(job)
 			continue
 		occupations += job
 		name_occupations[job.title] = job
-		/// CHANGES START
-		// Eg name_occupation_dict["Captain"] = "Admiral"
-		if(job.old_title == "NOPE")//if we didn't change it then set it to what it is normally
-			job.old_title = job.title
-		name_occupations_dict[job.old_title] = job.title
-		/// CHANGES_START
 		type_occupations[J] = job
 
 	return TRUE

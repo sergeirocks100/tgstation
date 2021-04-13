@@ -24,7 +24,7 @@
 	startWhen = rand(40, 60)
 
 /datum/round_event/carp_migration/announce(fake)
-	priority_announce("Unidentified lifesigns detected nearby [station_name()]. We suggest you investigate.", "Lifesign Alert", 'sound/ai/aliens.ogg')
+	priority_announce("Unidentified lifesigns detected nearby [station_name()]. We suggest you investigate.", "Lifesign Alert", 'sound/ai/default/aliens.ogg')
 
 
 /datum/round_event/carp_migration/start()
