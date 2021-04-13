@@ -25,25 +25,27 @@
 	name = "Paramedic"
 	jobtype = /datum/job/paramedic
 
+
 	ears = /obj/item/radio/headset/headset_med
-	uniform = /obj/item/clothing/under/rank/medical/paramedic
-	head = /obj/item/clothing/head/soft/paramedic
-	shoes = /obj/item/clothing/shoes/sneakers/blue
-	suit =  /obj/item/clothing/suit/toggle/labcoat/paramedic
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
-	belt = /obj/item/storage/belt/medical/paramedic
-	id = /obj/item/card/id/advanced
-	l_pocket = /obj/item/pda/medical
-	suit_store = /obj/item/flashlight/pen/paramedic
+	l_pocket = /obj/item/pda/syndicate
+	uniform = /obj/item/clothing/under/syndicate
+	r_pocket = /obj/item/flashlight/seclite
+	glasses = /obj/item/clothing/glasses/hud/health/night
+	gloves = /obj/item/clothing/gloves/color/black
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/beret/durathread
+	suit = /obj/item/clothing/suit/armor/vest
+
+	backpack = /obj/item/storage/backpack/duffelbag/syndie
+	satchel = /obj/item/storage/backpack/duffelbag/syndie
+	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
+	box = /obj/item/storage/box/survival/syndie
+	pda_slot = ITEM_SLOT_LPOCKET
 	backpack_contents = list(/obj/item/roller=1)
+	belt = /obj/item/storage/belt/medical/paramedic
 	pda_slot = ITEM_SLOT_LPOCKET
 
 	skillchips = list(/obj/item/skillchip/quickercarry)
-
-	backpack = /obj/item/storage/backpack/medic
-	satchel = /obj/item/storage/backpack/satchel/med
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
-	box = /obj/item/storage/box/survival/medical
 
 	chameleon_extras = /obj/item/gun/syringe
 

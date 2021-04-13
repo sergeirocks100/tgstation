@@ -1,53 +1,53 @@
 GLOBAL_LIST_INIT(command_positions, list(
-	"Captain",
-	"Head of Personnel",
-	"Head of Security",
-	"Chief Engineer",
-	"Research Director",
+	"Admiral",
+	"Corporate Liaison",
+	"Chief Master At Arms",
+	"Chief Engineering Officer",
+	"Chief Research Officer",
 	"Chief Medical Officer"))
 
 
 GLOBAL_LIST_INIT(engineering_positions, list(
-	"Chief Engineer",
-	"Station Engineer",
+	"Chief Engineering Officer",
+	"Engine Technician",
 	"Atmospheric Technician"))
 
 
 GLOBAL_LIST_INIT(medical_positions, list(
 	"Chief Medical Officer",
-	"Medical Doctor",
+	"Medical Officer",
 	"Paramedic",
-	"Virologist",
-	"Chemist"))
+	"Bioweapons Technician",
+	"Explosives Technician"))
 
 
 GLOBAL_LIST_INIT(science_positions, list(
-	"Research Director",
-	"Scientist",
-	"Geneticist",
-	"Roboticist"))
+	"Chief Research Officer",
+	"Researcher",
+	"Genetics Researcher",
+	"Robotics Technician"))
 
 
 GLOBAL_LIST_INIT(supply_positions, list(
-	"Quartermaster",
-	"Cargo Technician",
+	"Deck Officer",
+	"Deck Crewman",
 	"Shaft Miner"))
 
 
 GLOBAL_LIST_INIT(service_positions, list(
-	"Head of Personnel",
+	"Corporate Liaison",
 	"Bartender",
 	"Botanist",
 	"Cook",
 	"Janitor",
 	"Curator",
 	"Psychologist",
-	"Lawyer",
-	"Chaplain",
+	"Corporate Lawyer",
+	"Tiger Fanatic",
 	"Clown",
 	"Mime",
 	"Prisoner",
-	"Assistant"))
+	"Lackey"))
 
 //we really need to split service into civillian positions officially, until then this is my solution
 GLOBAL_LIST_INIT(service_food_positions, list(
@@ -57,17 +57,17 @@ GLOBAL_LIST_INIT(service_food_positions, list(
 ))
 
 GLOBAL_LIST_INIT(security_positions, list(
-	"Head of Security",
-	"Warden",
-	"Detective",
-	"Security Officer"))
+	"Chief Master At Arms",
+	"Brig Officer",
+	"Investigative Officer",
+	"Master At Arms"))
 
 /// These aren't defacto jobs, but are the special departmental variants for sec officers.
 GLOBAL_LIST_INIT(security_sub_positions, list(
-	"Security Officer (Cargo)",
-	"Security Officer (Engineering)",
-	"Security Officer (Medical)",
-	"Security Officer (Science)",
+	"Master At Arms (Cargo)",
+	"Master At Arms (Engineering)",
+	"Master At Arms (Medical)",
+	"Master At Arms (Science)",
 ))
 
 GLOBAL_LIST_INIT(nonhuman_positions, list(

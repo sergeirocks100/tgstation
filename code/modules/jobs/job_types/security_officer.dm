@@ -1,11 +1,11 @@
 /datum/job/security_officer
-	title = "Security Officer"
+	title = "Master At Arms"
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
-	department_head = list("Head of Security")
+	department_head = list("Chief Master At Arms")
 	faction = "Station"
 	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
-	supervisors = "the head of security, and the head of your assigned department (if applicable)"
+	supervisors = "the chief master at arms, and the head of your assigned department (if applicable)"
 	selection_color = "#ffeeee"
 	minimal_player_age = 7
 	exp_requirements = 300
@@ -169,29 +169,31 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 	)
 
 /datum/outfit/job/security
-	name = "Security Officer"
+	name = "Master At Arms"
 	jobtype = /datum/job/security_officer
 
-	belt = /obj/item/pda/security
 	ears = /obj/item/radio/headset/headset_sec/alt
-	uniform = /obj/item/clothing/under/rank/security/officer
+	belt = /obj/item/storage/belt/utility/syndicate
+	l_pocket = /obj/item/pda/syndicate
+	uniform = /obj/item/clothing/under/syndicate/camo
+	r_pocket = /obj/item/flashlight/seclite
+	glasses = /obj/item/clothing/glasses/hud/security/night
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/helmet/sec
-	suit = /obj/item/clothing/suit/armor/vest/alt
 	shoes = /obj/item/clothing/shoes/jackboots
-	l_pocket = /obj/item/restraints/handcuffs
-	r_pocket = /obj/item/assembly/flash/handheld
+	head = /obj/item/clothing/head/beret/sec
+	suit = /obj/item/clothing/suit/armor/vest
+
+	backpack = /obj/item/storage/backpack/duffelbag/syndie
+	satchel = /obj/item/storage/backpack/duffelbag/syndie
+	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
+	box = /obj/item/storage/box/survival/syndie
+	pda_slot = ITEM_SLOT_LPOCKET
 	suit_store = /obj/item/gun/energy/disabler
 	backpack_contents = list(/obj/item/melee/baton/loaded=1)
 
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	box = /obj/item/storage/box/survival/security
-
 	implants = list(/obj/item/implant/mindshield)
 
-	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
+	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses)
 	//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
 
 	id_trim = /datum/id_trim/job/security_officer

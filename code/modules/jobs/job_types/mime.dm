@@ -1,10 +1,10 @@
 /datum/job/mime
 	title = "Mime"
-	department_head = list("Head of Personnel")
+	department_head = list("Corporate Liaison")
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the corporate liaison"
 	selection_color = "#bbe291"
 
 	outfit = /datum/outfit/job/mime
@@ -30,7 +30,7 @@
 	uniform = /obj/item/clothing/under/rank/civilian/mime
 	mask = /obj/item/clothing/mask/gas/mime
 	gloves = /obj/item/clothing/gloves/color/white
-	head = /obj/item/clothing/head/frenchberet
+	head = /obj/item/clothing/head/ushanka
 	suit = /obj/item/clothing/suit/toggle/suspenders
 	backpack_contents = list(
 		/obj/item/stamp/mime = 1,

@@ -1,12 +1,12 @@
 /datum/job/research_director
-	title = "Research Director"
+	title = "Chief Research Officer"
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
-	department_head = list("Captain")
+	department_head = list("Admiral")
 	head_announce = list("Science")
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "the admiral"
 	selection_color = "#ffddff"
 	req_admin_notify = 1
 	minimal_player_age = 7
@@ -32,22 +32,27 @@
 		SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/minor_announce, "Due to staffing shortages, newly promoted Acting Captain [H.real_name] on deck!"))
 
 /datum/outfit/job/rd
-	name = "Research Director"
+	name = "Chief Reseearch Officer"
 	jobtype = /datum/job/research_director
 
 	id = /obj/item/card/id/advanced/silver
-	belt = /obj/item/pda/heads/rd
 	ears = /obj/item/radio/headset/heads/rd
-	uniform = /obj/item/clothing/under/rank/rnd/research_director
-	shoes = /obj/item/clothing/shoes/sneakers/brown
-	suit = /obj/item/clothing/suit/toggle/labcoat
-	l_hand = /obj/item/clipboard
-	l_pocket = /obj/item/laser_pointer
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced/command=1)
+	belt = /obj/item/storage/belt/utility/syndicate
+	l_pocket = /obj/item/pda/syndicate
+	uniform = /obj/item/clothing/under/syndicate/camo
+	r_pocket = /obj/item/flashlight/seclite
+	glasses = /obj/item/clothing/glasses/night
+	gloves = /obj/item/clothing/gloves/color/black
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/beret/sec/navyofficer
+	suit = /obj/item/clothing/suit/armor/vest
 
-	backpack = /obj/item/storage/backpack/science
-	satchel = /obj/item/storage/backpack/satchel/tox
-	duffelbag = /obj/item/storage/backpack/duffelbag/toxins
+	backpack = /obj/item/storage/backpack/duffelbag/syndie
+	satchel = /obj/item/storage/backpack/duffelbag/syndie
+	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
+	box = /obj/item/storage/box/survival/syndie
+	pda_slot = ITEM_SLOT_LPOCKET
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced/command=1)
 
 	skillchips = list(/obj/item/skillchip/job/research_director)
 
