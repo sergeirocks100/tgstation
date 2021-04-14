@@ -234,3 +234,7 @@
 /turf/open/floor/iron/sepia
 	icon_state = "sepia"
 	base_icon_state = "sepia"
+
+/turf/open/floor/iron/airless/cafeteriareversed
+	icon_state = "cafeteriareversed"
+	base_icon_state = "cafeteriareversed"

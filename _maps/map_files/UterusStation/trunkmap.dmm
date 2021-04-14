@@ -378,11 +378,11 @@
 	dir = 8
 	},
 /obj/machinery/door/window/eastright{
-	name = "Head of Research";
+	name = "Chief Research Officer";
 	req_access_txt = "19"
 	},
 /obj/machinery/door/window/westleft{
-	name = "Head of Research";
+	name = "Chief Research Officer";
 	req_access_txt = "19"
 	},
 /turf/open/floor/iron/white,
@@ -583,6 +583,9 @@
 	},
 /turf/open/floor/plating,
 /area/engineering/atmospherics_engine)
+"aCu" = (
+/turf/open/floor/iron,
+/area/service/theater)
 "aCN" = (
 /obj/structure/cable,
 /obj/structure/chair{
@@ -607,12 +610,6 @@
 	},
 /turf/open/floor/plating,
 /area/hallway/secondary/construction)
-"aDP" = (
-/obj/structure/chair{
-	dir = 1
-	},
-/turf/open/floor/iron,
-/area/service/theater)
 "aDU" = (
 /turf/open/floor/iron,
 /area/engineering/atmospherics_engine)
@@ -887,6 +884,16 @@
 /obj/structure/cable,
 /turf/closed/wall/r_wall,
 /area/engineering/main)
+"aUI" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
+/turf/open/floor/plating,
+/area/maintenance/central)
 "aUR" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/directional{
 	dir = 8
@@ -1651,6 +1658,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white,
 /area/science/lab)
+"bGK" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
+	dir = 6
+	},
+/turf/closed/wall,
+/area/maintenance/central)
 "bHV" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
@@ -2035,12 +2051,6 @@
 	},
 /turf/open/floor/iron,
 /area/hallway/secondary/entry)
-"cfF" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/wood,
-/area/service/theater)
 "cgE" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/security{
@@ -2688,6 +2698,12 @@
 	},
 /turf/open/floor/iron/white,
 /area/science/lab)
+"cIy" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/service/theater)
 "cIQ" = (
 /obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/iron/white,
@@ -2773,6 +2789,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 6
 	},
+/obj/item/gun/ballistic/revolver,
 /turf/open/floor/iron,
 /area/commons/fitness)
 "cLb" = (
@@ -3540,9 +3557,6 @@
 	},
 /turf/open/floor/iron,
 /area/hallway/primary/aft)
-"dxp" = (
-/turf/closed/wall,
-/area/service/theater)
 "dxx" = (
 /turf/open/floor/plating,
 /area/service/hydroponics)
@@ -4514,7 +4528,8 @@
 /area/security/brig)
 "esK" = (
 /obj/structure/closet/secure_closet/hop{
-	icon_state = "syndicate"
+	icon_state = "syndicate";
+	name = "\proper corporate liaison's locker"
 	},
 /turf/open/floor/wood,
 /area/command/heads_quarters/hop)
@@ -4574,7 +4589,9 @@
 "evZ" = (
 /obj/structure/table,
 /obj/item/pen,
-/obj/item/stamp/hos,
+/obj/item/stamp/hos{
+	name = "chief master at arms' rubber stamp"
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/security/brig)
@@ -4808,15 +4825,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white,
 /area/medical/virology)
-"eJj" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
-	dir = 6
-	},
-/turf/closed/wall,
-/area/maintenance/central)
 "eJL" = (
 /obj/machinery/light,
 /turf/open/floor/iron,
@@ -4893,11 +4901,11 @@
 	dir = 1
 	},
 /obj/machinery/door/window/southleft{
-	name = "Head of Research";
+	name = "Chief Research Officer";
 	req_access_txt = "19"
 	},
 /obj/machinery/door/window/northleft{
-	name = "Head of Research";
+	name = "Chief Research Officer";
 	req_access_txt = "19"
 	},
 /turf/open/floor/iron,
@@ -5500,7 +5508,9 @@
 /turf/open/floor/iron,
 /area/hallway/primary/central)
 "frO" = (
-/obj/structure/closet/secure_closet/engineering_chief,
+/obj/structure/closet/secure_closet/engineering_chief{
+	name = "\proper chief engineering officer's locker"
+	},
 /obj/structure/window/reinforced{
 	dir = 1
 	},
@@ -5531,8 +5541,11 @@
 /turf/open/floor/iron,
 /area/security/checkpoint)
 "ftc" = (
-/obj/item/paper/fluff/jobs/security/court_judgement,
 /obj/structure/table/wood,
+/obj/item/paper{
+	info = "<B>Roles:</B><BR>\nThe Forensic Technician is basically the investigator and prosecutor.<BR>\nThe Staff Assistant can perform these functions with written authority from the Forensic Technician.<BR>\nThe Captain/HoP/Warden is ct as the judicial authority.<BR>\nThe Security Officers are responsible for executing warrants, security during trial, and prisoner transport.<BR>\n<BR>\n<B>Investigative Phase:</B><BR>\nAfter the crime has been committed the Forensic Technician's job is to gather evidence and try to ascertain not only who did it but what happened. He must take special care to catalogue everything and don't leave anything out. Write out all the evidence on paper. Make sure you take an appropriate number of fingerprints. IF he must ask someone questions he has permission to confront them. If the person refuses he can ask a judicial authority to write a subpoena for questioning. If again he fails to respond then that person is to be jailed as insubordinate and obstructing justice. Said person will be released after he cooperates.<BR>\n<BR>\nONCE the FT has a clear idea as to who the criminal is he is to write an arrest warrant on the piece of paper. IT MUST LIST THE CHARGES. The FT is to then go to the judicial authority and explain a small version of his case. If the case is moderately acceptable the authority should sign it. Security must then execute said warrant.<BR>\n<BR>\n<B>Pre-Pre-Trial Phase:</B><BR>\nNow a legal representative must be presented to the defendant if said defendant requests one. That person and the defendant are then to be given time to meet (in the jail IS ACCEPTABLE). The defendant and his lawyer are then to be given a copy of all the evidence that will be presented at trial (rewriting it all on paper is fine). THIS IS CALLED THE DISCOVERY PACK. With a few exceptions, THIS IS THE ONLY EVIDENCE BOTH SIDES MAY USE AT TRIAL. IF the prosecution will be seeking the death penalty it MUST be stated at this time. ALSO if the defense will be seeking not guilty by mental defect it must state this at this time to allow ample time for examination.<BR>\nNow at this time each side is to compile a list of witnesses. By default, the defendant is on both lists regardless of anything else. Also the defense and prosecution can compile more evidence beforehand BUT in order for it to be used the evidence MUST also be given to the other side.\nThe defense has time to compile motions against some evidence here.<BR>\n<B>Possible Motions:</B><BR>\n1. <U>Invalidate Evidence-</U> Something with the evidence is wrong and the evidence is to be thrown out. This includes irrelevance or corrupt security.<BR>\n2. <U>Free Movement-</U> Basically the defendant is to be kept uncuffed before and during the trial.<BR>\n3. <U>Subpoena Witness-</U> If the defense presents god reasons for needing a witness but said person fails to cooperate then a subpoena is issued.<BR>\n4. <U>Drop the Charges-</U> Not enough evidence is there for a trial so the charges are to be dropped. The FT CAN RETRY but the judicial authority must carefully reexamine the new evidence.<BR>\n5. <U>Declare Incompetent-</U> Basically the defendant is insane. Once this is granted a medical official is to examine the patient. If he is indeed insane he is to be placed under care of the medical staff until he is deemed competent to stand trial.<BR>\n<BR>\nALL SIDES MOVE TO A COURTROOM<BR>\n<B>Pre-Trial Hearings:</B><BR>\nA judicial authority and the 2 sides are to meet in the trial room. NO ONE ELSE BESIDES A SECURITY DETAIL IS TO BE PRESENT. The defense submits a plea. If the plea is guilty then proceed directly to sentencing phase. Now the sides each present their motions to the judicial authority. He rules on them. Each side can debate each motion. Then the judicial authority gets a list of crew members. He first gets a chance to look at them all and pick out acceptable and available jurors. Those jurors are then called over. Each side can ask a few questions and dismiss jurors they find too biased. HOWEVER before dismissal the judicial authority MUST agree to the reasoning.<BR>\n<BR>\n<B>The Trial:</B><BR>\nThe trial has three phases.<BR>\n1. <B>Opening Arguments</B>- Each side can give a short speech. They may not present ANY evidence.<BR>\n2. <B>Witness Calling/Evidence Presentation</B>- The prosecution goes first and is able to call the witnesses on his approved list in any order. He can recall them if necessary. During the questioning the lawyer may use the evidence in the questions to help prove a point. After every witness the other side has a chance to cross-examine. After both sides are done questioning a witness the prosecution can present another or recall one (even the EXACT same one again!). After prosecution is done the defense can call witnesses. After the initial cases are presented both sides are free to call witnesses on either list.<BR>\nFINALLY once both sides are done calling witnesses we move onto the next phase.<BR>\n3. <B>Closing Arguments</B>- Same as opening.<BR>\nThe jury then deliberates IN PRIVATE. THEY MUST ALL AGREE on a verdict. REMEMBER: They mix between some charges being guilty and others not guilty (IE if you supposedly killed someone with a gun and you unfortunately picked up a gun without authorization then you CAN be found not guilty of murder BUT guilty of possession of illegal weaponry.). Once they have agreed they present their verdict. If unable to reach a verdict and feel they will never they call a deadlocked jury and we restart at Pre-Trial phase with an entirely new set of jurors.<BR>\n<BR>\n<B>Sentencing Phase:</B><BR>\nIf the death penalty was sought (you MUST have gone through a trial for death penalty) then skip to the second part. <BR>\nI. Each side can present more evidence/witnesses in any order. There is NO ban on emotional aspects or anything. The prosecution is to submit a suggested penalty. After all the sides are done then the judicial authority is to give a sentence.<BR>\nII. The jury stays and does the same thing as I. Their sole job is to determine if the death penalty is applicable. If NOT then the judge selects a sentence.<BR>\n<BR>\nTADA you're done. Security then executes the sentence and adds the applicable convictions to the person's record.<BR>";
+	name = "paper- 'A Crash Course in Legal SOP on SS13'"
+	},
 /turf/open/floor/iron,
 /area/security/courtroom)
 "ftk" = (
@@ -6087,12 +6100,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/hallway/primary/starboard)
-"fRx" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
-	dir = 6
-	},
-/turf/open/floor/iron,
-/area/service/theater)
 "fSu" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/end{
 	dir = 1
@@ -6523,12 +6530,6 @@
 	},
 /turf/open/floor/iron,
 /area/cargo/qm)
-"gsz" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/open/floor/iron,
-/area/service/theater)
 "gsF" = (
 /obj/structure/closet/crate,
 /obj/effect/decal/cleanable/dirt,
@@ -6975,11 +6976,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port)
-"gOV" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/vending/sovietsoda,
-/turf/open/floor/iron,
-/area/commons/fitness)
 "gPe" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -8434,7 +8430,9 @@
 /area/command/bridge)
 "idh" = (
 /obj/structure/table,
-/obj/item/card/id/advanced/gold/captains_spare,
+/obj/item/card/id/advanced/gold/captains_spare{
+	name = "admiral's spare ID"
+	},
 /obj/item/pinpointer,
 /obj/item/disk/nuclear,
 /obj/item/hand_tele,
@@ -8608,15 +8606,6 @@
 	},
 /turf/open/floor/wood,
 /area/command/heads_quarters/captain)
-"iqQ" = (
-/obj/structure/chair{
-	dir = 1
-	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/open/floor/iron,
-/area/service/theater)
 "ira" = (
 /obj/structure/cable,
 /obj/effect/spawner/structure/window/hollow/reinforced/directional{
@@ -10022,7 +10011,8 @@
 /area/maintenance/starboard/fore)
 "jHC" = (
 /obj/structure/closet/secure_closet/captains{
-	icon_state = "syndicate"
+	icon_state = "syndicate";
+	name = "\proper admiral's locker"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/red,
@@ -10363,7 +10353,9 @@
 /area/maintenance/aft)
 "jUI" = (
 /obj/structure/table,
-/obj/item/stamp/rd,
+/obj/item/stamp/rd{
+	name = "chief research officer's rubber stamp"
+	},
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
@@ -10522,6 +10514,7 @@
 	},
 /obj/machinery/power/apc/auto_name/north,
 /obj/structure/cable,
+/obj/machinery/biogenerator,
 /turf/open/floor/iron,
 /area/service/hydroponics)
 "kde" = (
@@ -10535,6 +10528,12 @@
 "kdJ" = (
 /obj/structure/table/reinforced,
 /obj/item/hand_labeler,
+/obj/machinery/door/window/brigdoor/northleft{
+	dir = 2;
+	name = "Customs Desk";
+	pixel_y = -7;
+	req_access_txt = "19"
+	},
 /turf/open/floor/iron,
 /area/security/checkpoint)
 "kdK" = (
@@ -10951,6 +10950,15 @@
 	},
 /turf/closed/wall/rust,
 /area/hallway/secondary/exit)
+"kxH" = (
+/obj/structure/table,
+/obj/item/food/pie/cream,
+/obj/item/food/pie/cream,
+/obj/item/food/pie/cream,
+/obj/item/food/pie/cream,
+/obj/item/food/pie/cream,
+/turf/open/floor/wood,
+/area/service/theater)
 "kxV" = (
 /obj/structure/closet/emcloset,
 /obj/effect/turf_decal/tile/yellow{
@@ -11060,6 +11068,9 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/disposal)
+"kEB" = (
+/turf/closed/wall,
+/area/service/theater)
 "kEF" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/end{
 	dir = 1
@@ -12491,7 +12502,9 @@
 /area/medical/virology)
 "lZY" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet/research_director,
+/obj/structure/closet/secure_closet/research_director{
+	name = "\proper chief research officer's locker"
+	},
 /turf/open/floor/iron,
 /area/command/heads_quarters/rd)
 "lZZ" = (
@@ -12549,6 +12562,12 @@
 /obj/structure/grille,
 /turf/open/space/basic,
 /area/space)
+"mdx" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/service/theater)
 "mdC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 6
@@ -12612,15 +12631,6 @@
 	},
 /turf/open/floor/iron,
 /area/engineering/supermatter)
-"mgS" = (
-/obj/structure/table,
-/obj/item/food/pie/cream,
-/obj/item/food/pie/cream,
-/obj/item/food/pie/cream,
-/obj/item/food/pie/cream,
-/obj/item/food/pie/cream,
-/turf/open/floor/wood,
-/area/service/theater)
 "mgT" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/closed/wall/rust,
@@ -12635,7 +12645,7 @@
 	dir = 4
 	},
 /obj/machinery/door/window/westright{
-	name = "Head of Security";
+	name = "Chief Master At Arms";
 	req_access_txt = "19"
 	},
 /obj/machinery/airalarm/directional/north,
@@ -12664,7 +12674,7 @@
 "min" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/command{
-	name = "Captain's Quarters";
+	name = "Admiral's Quarters";
 	req_access_txt = "20"
 	},
 /obj/machinery/door/firedoor/border_only{
@@ -12908,10 +12918,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/brig)
-"mqO" = (
-/obj/machinery/door/window/southleft,
-/turf/open/floor/wood,
-/area/service/theater)
 "mqZ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/nitrous_output{
 	dir = 8
@@ -12968,11 +12974,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/security/brig)
-"mue" = (
-/obj/structure/table,
-/obj/item/toy/dummy,
-/turf/open/floor/wood,
-/area/service/theater)
 "muH" = (
 /obj/machinery/power/smes,
 /obj/structure/cable,
@@ -13067,6 +13068,12 @@
 /obj/structure/cable,
 /turf/open/floor/plating/airless,
 /area/command/bridge)
+"myo" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/service/theater)
 "myp" = (
 /obj/machinery/firealarm/directional/east,
 /obj/effect/turf_decal/tile/red{
@@ -13918,9 +13925,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria{
-	icon_state = "cafeteriareversed"
-	},
+/turf/open/floor/iron/airless/cafeteriareversed,
 /area/hallway/secondary/entry)
 "nol" = (
 /obj/structure/disposalpipe/segment{
@@ -14029,6 +14034,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1
+	},
+/obj/machinery/door/window/brigdoor/southright{
+	dir = 1;
+	name = "Security Desk";
+	pixel_y = 8;
+	req_access_txt = "63"
 	},
 /turf/open/floor/iron,
 /area/security/checkpoint/auxiliary)
@@ -14424,12 +14435,6 @@
 /obj/item/storage/box/pdas,
 /turf/open/floor/iron,
 /area/security/checkpoint)
-"nPK" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/service/theater)
 "nQn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 6
@@ -14510,6 +14515,12 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port)
+"nSt" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
+	dir = 6
+	},
+/turf/open/floor/iron,
+/area/service/theater)
 "nSD" = (
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -14597,10 +14608,6 @@
 /turf/open/floor/plating,
 /area/science/genetics)
 "nWp" = (
-/obj/machinery/door/window/brigdoor/northleft{
-	name = "Customs Desk";
-	req_access_txt = "19"
-	},
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/iron,
@@ -14886,6 +14893,11 @@
 /obj/effect/spawner/structure/window/hollow/reinforced,
 /turf/open/floor/plating,
 /area/science/test_area)
+"okL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/vending/sovietsoda,
+/turf/open/floor/iron,
+/area/commons/fitness)
 "okS" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -15055,6 +15067,15 @@
 /obj/machinery/computer/upload/ai,
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai_upload)
+"ors" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/service/theater)
 "orV" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/end{
 	dir = 4
@@ -15179,10 +15200,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/hallway/primary/aft)
-"oxB" = (
-/obj/structure/window/reinforced,
-/turf/open/floor/wood,
-/area/service/theater)
 "oxM" = (
 /turf/closed/wall/r_wall/rust,
 /area/command/teleporter)
@@ -15335,9 +15352,7 @@
 "oHc" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/machinery/vending/coffee,
-/turf/open/floor/iron/cafeteria{
-	icon_state = "cafeteriareversed"
-	},
+/turf/open/floor/iron/airless/cafeteriareversed,
 /area/hallway/secondary/entry)
 "oHf" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -16261,7 +16276,9 @@
 "pvw" = (
 /obj/structure/cable,
 /obj/structure/table,
-/obj/item/stamp/captain,
+/obj/item/stamp/captain{
+	name = "admiral's rubber stamp"
+	},
 /turf/open/floor/wood,
 /area/command/heads_quarters/captain)
 "pvy" = (
@@ -16650,7 +16667,9 @@
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced,
 /obj/structure/cable,
-/obj/item/stamp/ce,
+/obj/item/stamp/ce{
+	name = "chief engineering officer's rubber stamp"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/engineering/main)
@@ -17307,12 +17326,6 @@
 /obj/item/clothing/glasses/meson,
 /turf/open/floor/plating,
 /area/engineering/storage/tech)
-"qpv" = (
-/obj/machinery/door/airlock/public/glass{
-	name = "Theatre"
-	},
-/turf/open/floor/iron,
-/area/service/theater)
 "qpy" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -18109,7 +18122,9 @@
 /area/medical/virology)
 "red" = (
 /obj/structure/cable,
-/obj/structure/closet/secure_closet/hos,
+/obj/structure/closet/secure_closet/hos{
+	name = "\proper chief master at arms' locker"
+	},
 /turf/open/floor/iron,
 /area/security/brig)
 "reh" = (
@@ -18327,16 +18342,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white,
 /area/medical/virology)
-"rpH" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/door/airlock/maintenance{
-	name = "Maintenance Access";
-	req_access_txt = "12"
-	},
-/turf/open/floor/plating,
-/area/maintenance/central)
 "rpL" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
@@ -18943,6 +18948,12 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
+"rQB" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Theatre"
+	},
+/turf/open/floor/iron,
+/area/service/theater)
 "rQI" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
@@ -19400,11 +19411,11 @@
 	},
 /obj/machinery/camera/autoname,
 /obj/machinery/door/window/eastleft{
-	name = "Head of Research";
+	name = "Chief Research Officer";
 	req_access_txt = "19"
 	},
 /obj/machinery/door/window/westright{
-	name = "Head of Research";
+	name = "Chief Research Officer";
 	req_access_txt = "19"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -20172,9 +20183,6 @@
 	},
 /turf/open/floor/plating,
 /area/security/courtroom)
-"sQg" = (
-/turf/open/floor/iron,
-/area/service/theater)
 "sQi" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/directional{
 	dir = 4
@@ -20238,6 +20246,10 @@
 	},
 /turf/closed/wall,
 /area/maintenance/port/aft)
+"sUK" = (
+/obj/structure/window/reinforced,
+/turf/open/floor/wood,
+/area/service/theater)
 "sVm" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -20914,6 +20926,10 @@
 	},
 /turf/closed/wall/r_wall,
 /area/medical/virology)
+"tvJ" = (
+/obj/machinery/door/window/southleft,
+/turf/open/floor/wood,
+/area/service/theater)
 "tvK" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/fire/firefighter,
@@ -21132,6 +21148,15 @@
 	},
 /turf/open/floor/iron,
 /area/engineering/atmos)
+"tHr" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/service/theater)
 "tHB" = (
 /turf/closed/wall/rust,
 /area/tcommsat/server)
@@ -21321,9 +21346,7 @@
 	dir = 1
 	},
 /obj/machinery/vending/snack,
-/turf/open/floor/iron/cafeteria{
-	icon_state = "cafeteriareversed"
-	},
+/turf/open/floor/iron/airless/cafeteriareversed,
 /area/hallway/secondary/entry)
 "tSu" = (
 /obj/machinery/atmospherics/components/unary/tank/air{
@@ -21661,6 +21684,12 @@
 /obj/item/reagent_containers/spray/cleaner,
 /turf/open/floor/iron,
 /area/service/janitor)
+"ulP" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/service/theater)
 "ulQ" = (
 /obj/docking_port/stationary{
 	dir = 8;
@@ -21802,15 +21831,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/science/lab)
-"uqI" = (
-/obj/structure/chair{
-	dir = 1
-	},
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/service/theater)
 "uqJ" = (
 /obj/machinery/door/airlock/maintenance{
 	frequency = null;
@@ -21834,7 +21854,7 @@
 /area/engineering/atmos)
 "urj" = (
 /obj/effect/turf_decal/tile/blue,
-/obj/machinery/vending/cigarette,
+/obj/machinery/vending/cigarette/syndicate,
 /turf/open/floor/iron/white/corner{
 	dir = 8
 	},
@@ -22314,7 +22334,7 @@
 /obj/effect/turf_decal/tile/bar,
 /obj/machinery/power/apc/auto_name/west,
 /obj/structure/cable,
-/obj/machinery/vending/cigarette,
+/obj/machinery/vending/cigarette/syndicate,
 /turf/open/floor/iron,
 /area/service/bar)
 "uTH" = (
@@ -22484,6 +22504,11 @@
 	},
 /turf/open/floor/iron/dark,
 /area/medical/morgue)
+"vcc" = (
+/obj/structure/table,
+/obj/item/toy/dummy,
+/turf/open/floor/wood,
+/area/service/theater)
 "vcv" = (
 /obj/machinery/door/window/westleft{
 	name = "Med-Sci";
@@ -22605,7 +22630,7 @@
 /area/service/chapel/main)
 "vgt" = (
 /obj/machinery/door/window/northleft{
-	name = "Chef Engineer's Office";
+	name = "Chief Engineering Officer's Office";
 	req_access_txt = "19"
 	},
 /obj/structure/cable,
@@ -25113,11 +25138,11 @@
 	dir = 1
 	},
 /obj/machinery/door/window/southright{
-	name = "Head of Research";
+	name = "Chief Research Officer";
 	req_access_txt = "19"
 	},
 /obj/machinery/door/window/northright{
-	name = "Head of Research";
+	name = "Chief Research Officer";
 	req_access_txt = "19"
 	},
 /turf/open/floor/iron,
@@ -25468,7 +25493,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
-/obj/machinery/vending/cigarette,
+/obj/machinery/vending/cigarette/syndicate,
 /turf/open/floor/iron/white/corner{
 	dir = 4
 	},
@@ -25553,7 +25578,7 @@
 "xNh" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/maintenance{
-	name = "Quartermaster's Office";
+	name = "Deck Officer's Office";
 	req_access_txt = "41"
 	},
 /turf/open/floor/iron,
@@ -25875,7 +25900,9 @@
 /area/security/prison)
 "ybZ" = (
 /obj/structure/table,
-/obj/item/stamp/hop,
+/obj/item/stamp/hop{
+	name = "corporate liaison's rubber stamp"
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/command/heads_quarters/hop)
@@ -52440,7 +52467,7 @@ rpL
 iZR
 qSb
 rpL
-gOV
+okL
 ieb
 upM
 upM
@@ -53698,7 +53725,7 @@ fqc
 ffh
 fqc
 fqc
-rpH
+aUI
 tdA
 gsN
 dTw
@@ -53955,14 +53982,14 @@ lYJ
 vFg
 tdA
 gGe
-cfF
-oxB
-gsz
-aDP
-aDP
-aDP
-iqQ
-dxp
+myo
+sUK
+mdx
+ulP
+ulP
+ulP
+tHr
+kEB
 omC
 omC
 bqH
@@ -54214,12 +54241,12 @@ tdA
 vWg
 wKS
 qYZ
-fRx
-fRx
-fRx
-fRx
-sQg
-qpv
+nSt
+nSt
+nSt
+nSt
+aCu
+rQB
 kMU
 kMU
 unq
@@ -54468,14 +54495,14 @@ qsj
 cLb
 stg
 tdA
-mue
+vcc
 wKS
 slN
-sQg
-sQg
-sQg
-fRx
-fRx
+aCu
+aCu
+aCu
+nSt
+nSt
 wue
 rGR
 rGR
@@ -54725,15 +54752,15 @@ fUc
 lYJ
 stg
 tdA
-mgS
+kxH
 wKS
-mqO
-nPK
-aDP
-aDP
-aDP
-uqI
-dxp
+tvJ
+cIy
+ulP
+ulP
+ulP
+ors
+kEB
 shW
 shW
 unq
@@ -54983,7 +55010,7 @@ lYJ
 gim
 mxd
 mxd
-eJj
+bGK
 lXq
 lXq
 jTv

@@ -61,11 +61,13 @@
 	. = ..()
 
 	access = SSid_access.get_region_access_list(list(REGION_CENTCOM, REGION_ALL_STATION))
+/*
 
 /// Trim for Centcom (Soviet) Admirals. All Centcom and Station Access.
 /datum/id_trim/centcom/admiral
 	assignment = "Admiral"
-
+	
+*/
 /datum/id_trim/centcom/admiral/New()
 	. = ..()
 
