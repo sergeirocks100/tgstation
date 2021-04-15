@@ -40,6 +40,14 @@
 	var/relic_mask
 	var/memory_saved = FALSE
 
+/mob/living/carbon/human/species/monkey/deempisi
+    unique_name = FALSE
+    use_random_name = FALSE
+
+/mob/living/carbon/human/species/monkey/deempisi/Initialize(mapload, cubespawned, mob/spawner)
+    . = ..()
+    name = "Mr. Deempisi"	
+
 /mob/living/carbon/human/species/monkey/punpun/Initialize()
 	Read_Memory()
 

@@ -35,9 +35,8 @@
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/escape)
 "t" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light{
-	dir = 8
+/obj/machinery/door/airlock/titanium{
+	name = "Emergency Shuttle Airlock"
 	},
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle/escape)
@@ -65,8 +64,9 @@
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle/escape)
 "C" = (
-/obj/machinery/door/airlock/titanium{
-	name = "Emergency Shuttle Airlock"
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle/escape)
@@ -129,8 +129,7 @@
 (1,1,1) = {"
 a
 S
-S
-S
+t
 S
 v
 S
@@ -138,16 +137,17 @@ S
 R
 S
 S
-C
+t
 S
+t
 S
 a
 "}
 (2,1,1) = {"
 g
 U
-t
-l
+m
+K
 m
 m
 m
@@ -155,8 +155,8 @@ K
 l
 m
 m
+C
 m
-t
 U
 g
 "}
