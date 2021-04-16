@@ -521,6 +521,10 @@
 	suffix = "whiteship_pod"
 	name = "Salvage Pod"
 
+/datum/map_template/shuttle/whiteship/uterus
+	suffix = "uterus"
+	name = "White Ship"
+
 /datum/map_template/shuttle/cargo/kilo
 	suffix = "kilo"
 	name = "supply shuttle (Kilo)"
@@ -579,6 +583,10 @@
 /datum/map_template/shuttle/mining/box
 	suffix = "box"
 	name = "mining shuttle (Box)"
+
+/datum/map_template/shuttle/mining/uterus
+	suffix = "uterus"
+	name = "mining shuttle (Uterus)"
 
 /datum/map_template/shuttle/labour/box
 	suffix = "box"
