@@ -9,6 +9,13 @@
 	desc = "The Intergalactic symbol of Medical institutions. You'll probably get help here."
 	icon_state = "bluecross"
 	is_editable = TRUE
+	
+/obj/structure/sign/departments/medbay/redcross
+	name = "\improper Medbay sign"
+	sign_change_name = "Department - Medbay"
+	desc = "The Intergalactic symbol of Medical institutions. You'll probably get help here."
+	icon_state = "redcross"
+	is_editable = TRUE
 
 /obj/structure/sign/departments/medbay/alt
 	name = "\improper Medbay sign"
