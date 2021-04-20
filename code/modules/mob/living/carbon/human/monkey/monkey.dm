@@ -46,6 +46,7 @@
 
 /mob/living/carbon/human/species/monkey/deempisi/Initialize(mapload, cubespawned, mob/spawner)
     . = ..()
+	
     name = "Mr. Deempisi"	
 
 /mob/living/carbon/human/species/monkey/punpun/Initialize()
