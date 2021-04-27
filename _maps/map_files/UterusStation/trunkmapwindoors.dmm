@@ -748,7 +748,7 @@
 /turf/open/floor/iron,
 /area/hallway/primary/aft)
 "aIz" = (
-/obj/machinery/door/airlock/maintenance{
+/obj/machinery/door/window/eastright{
 	name = "Cargo Office";
 	req_access_txt = "31"
 	},
@@ -2204,8 +2204,11 @@
 /turf/open/floor/iron/dark,
 /area/engineering/supermatter)
 "bYn" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/middle{
+	dir = 4
+	},
 /obj/machinery/status_display/supply,
-/turf/closed/wall/r_wall/rust,
+/turf/open/floor/plating,
 /area/cargo/storage)
 "bYt" = (
 /obj/structure/table,
@@ -4511,15 +4514,15 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+/obj/machinery/door/window/eastright{
+	name = "Medbay";
+	req_one_access_txt = "5"
+	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/green{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/green,
-/obj/machinery/door/airlock/public/glass{
-	name = "Medbay";
-	req_access_txt = "5"
-	},
 /turf/open/floor/iron/white,
 /area/medical/medbay)
 "dNz" = (
@@ -4714,6 +4717,7 @@
 /turf/closed/wall,
 /area/ai_monitored/turret_protected/ai)
 "dTv" = (
+/obj/structure/cable,
 /obj/machinery/door/airlock/engineering{
 	name = "Telecomms Server Room";
 	req_access_txt = "32"
@@ -5035,11 +5039,11 @@
 /turf/closed/wall,
 /area/maintenance/starboard)
 "eiq" = (
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/airlock/command{
+/obj/machinery/door/window/brigdoor/northleft{
 	name = "Customs";
 	req_access_txt = "19"
 	},
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/iron,
 /area/security/checkpoint)
 "ejp" = (
@@ -5238,8 +5242,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_box/magazine/m12g/stun,
 /obj/item/ammo_box/magazine/m12g/stun,
-/obj/item/gun/ballistic/shotgun/bulldog/unrestricted,
-/obj/item/gun/ballistic/shotgun/bulldog/unrestricted,
+/obj/item/gun/ballistic/shotgun/bulldog,
+/obj/item/gun/ballistic/shotgun/bulldog,
 /turf/open/floor/iron/dark,
 /area/security/brig)
 "esC" = (
@@ -7526,14 +7530,14 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
+/obj/machinery/door/window/westleft{
+	name = "Medbay";
+	req_access_txt = "5"
+	},
 /obj/effect/turf_decal/tile/green{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/green,
-/obj/machinery/door/airlock/public/glass{
-	name = "Medbay";
-	req_access_txt = "5"
-	},
 /turf/open/floor/iron/white,
 /area/medical/medbay)
 "glI" = (
@@ -13733,8 +13737,8 @@
 /area/commons/locker)
 "lmN" = (
 /obj/structure/cable,
-/turf/open/floor/iron/telecomms,
-/area/tcommsat/server)
+/turf/open/floor/iron,
+/area/tcommsat/computer)
 "lmP" = (
 /turf/closed/wall,
 /area/science/server)
@@ -14292,10 +14296,10 @@
 /turf/open/space/basic,
 /area/space)
 "lMP" = (
-/obj/effect/landmark/start/quartermaster,
-/obj/structure/chair/office{
+/obj/structure/chair{
 	dir = 4
 	},
+/obj/effect/landmark/start/quartermaster,
 /turf/open/floor/iron,
 /area/cargo/qm)
 "lNn" = (
@@ -16511,6 +16515,7 @@
 /obj/effect/spawner/structure/window/hollow/reinforced/directional{
 	dir = 10
 	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/tcommsat/server)
 "nvC" = (
@@ -20109,7 +20114,7 @@
 /turf/open/floor/iron,
 /area/hallway/primary/port)
 "qiG" = (
-/obj/structure/bed,
+/obj/machinery/stasis,
 /turf/open/floor/iron/white,
 /area/medical/medbay)
 "qiS" = (
@@ -21029,6 +21034,7 @@
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "qVY" = (
+/obj/structure/cable,
 /obj/machinery/telecomms/processor/preset_one/birdstation,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/telecomms,
@@ -22481,7 +22487,7 @@
 /turf/open/floor/iron,
 /area/cargo/storage)
 "sdR" = (
-/obj/structure/chair/office{
+/obj/structure/chair{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -24492,6 +24498,7 @@
 /turf/open/floor/iron,
 /area/hallway/primary/fore)
 "tzx" = (
+/obj/structure/cable,
 /obj/machinery/power/terminal{
 	dir = 4
 	},
@@ -24898,7 +24905,7 @@
 /area/security/brig)
 "tUu" = (
 /obj/structure/cable,
-/obj/structure/chair/office{
+/obj/structure/chair{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -26269,7 +26276,6 @@
 "vcL" = (
 /obj/machinery/blackbox_recorder,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
 /turf/open/floor/iron/telecomms,
 /area/tcommsat/server)
 "vde" = (
@@ -27909,7 +27915,6 @@
 /turf/open/floor/iron,
 /area/cargo/storage)
 "wwa" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/tcommsat/server)
@@ -47492,7 +47497,7 @@ sXv
 lCp
 aph
 sAv
-sXv
+bYn
 sXv
 lCp
 uTY
@@ -48517,7 +48522,7 @@ gWr
 cQs
 fqH
 bij
-bYn
+enM
 sdP
 fQX
 fQX
@@ -54450,10 +54455,10 @@ tQn
 tQn
 rmF
 umi
-ovl
+uwC
 nvp
 qVY
-srl
+mqI
 xdh
 mqI
 vcL
@@ -54712,8 +54717,8 @@ cnA
 wfz
 srl
 xmk
-cwu
-lmN
+wwa
+qDN
 pKs
 fVd
 isj
@@ -54970,7 +54975,7 @@ cwu
 cwu
 srl
 tzx
-wwa
+srl
 cwu
 fVd
 hBh
@@ -55741,7 +55746,7 @@ umw
 tCM
 xKm
 bsz
-oDH
+lmN
 xgW
 xKm
 gij
@@ -55998,7 +56003,7 @@ lON
 ssX
 xKm
 jkC
-dqR
+uHk
 dqR
 xKm
 hSC
