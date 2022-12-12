@@ -433,6 +433,20 @@ GLOBAL_LIST_EMPTY(flora_uprooting_tools_typepaths)
 /obj/structure/flora/tree/jungle/small/style_random/Initialize(mapload)
 	. = ..()
 	icon_state = "tree[rand(1, 6)]"
+/obj/structure/flora/tree/normal
+	desc = "A pretty looking, otherwise unremarkable tree."
+	pixel_y = 0
+	pixel_x = -32
+	icon = 'icons/obj/flora/normaltrees.dmi'
+	icon_state = "ntree1"
+/obj/structure/flora/tree/normal/get_seethrough_map()
+	return SEE_THROUGH_MAP_THREE_X_TWO
+/obj/structure/flora/tree/normal/style_2
+	icon_state = "ntree2"
+/obj/structure/flora/tree/normal/style_3
+	icon_state = "ntree3"
+/obj/structure/flora/tree/normal/style_4
+	icon_state = "ntree4"
 
 /**************
  * Pine Trees *
